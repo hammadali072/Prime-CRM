@@ -1,0 +1,33 @@
+.header-main {
+    padding-top: 21px;
+
+    .container {
+        .header-inr {
+            .logo-main {
+                .logo-otr {
+                    .logo-img {
+                        width: 260px;
+                        height: 55px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .menu-action {
+                gap: 0 45px;
+
+                .menu-otr {
+                    .menu-ul {
+                        gap: 0 45px;
+
+                        .menu-li {
+                            .menu-a {
+                                color: var(--primary03);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

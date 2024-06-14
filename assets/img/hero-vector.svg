@@ -1,0 +1,14 @@
+<svg width="1440" height="1028" viewBox="0 0 1440 1028" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_5_391" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="987">
+<path d="M381.031 886.228L0 0H1440V675.875L587.513 976.654C505.614 1005.55 415.334 966.014 381.031 886.228Z" fill="#45A6FF"/>
+</mask>
+<g mask="url(#mask0_5_391)">
+<path d="M-93.0691 647.896C-245.461 252.847 -50.0626 -190.435 343.366 -342.202C736.794 -493.969 1179.27 -296.75 1331.66 98.2995C1484.05 493.349 1288.65 936.631 895.226 1088.4C501.798 1240.16 59.323 1042.95 -93.0691 647.896Z" fill="url(#paint0_angular_5_391)"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_5_391" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(619.296 373.098) rotate(-111.094) scale(766.675 708.864)">
+<stop stop-color="#49DEFF" stop-opacity="0.72"/>
+<stop offset="1" stop-color="#4FFFDF" stop-opacity="0.71"/>
+</radialGradient>
+</defs>
+</svg>

@@ -23,50 +23,56 @@ h6 {
   padding: 0;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   display: inline-block;
+}
+.container{
+    padding-block: 15px;
 }
 body {
   font-family: "OpenSans-Regular";
 }
 .heading-h1{
-    font: 60px/ 21px "Jost-SemiBold";
+    font: 60px/ 133.2% "Jost-SemiBold";
 }
 .heading-h2{
-    font: 40px/ 21px "Jost-SemiBold";
+    font: 40px/ 133.2% "Jost-SemiBold";
 }
 .heading-h3{
-    font: 35px / 21px "Jost Medium";
+    font: 35px / 133.2% "Jost Medium";
 }
 .heading-h3-SB{
-    font: 35px / 21px "OpenSans-Bold";
+    font: 35px / 133.2% "OpenSans-Bold";
 }
 .heading-h4{
-    font: 30px / 20px "Jost-Medium";
+    font: 30px / 133.2% "Jost-Medium";
 }
 .heading-L{
-    font: 25px / 20px "Jost-Medium";
+    font: 25px / 133.2% "Jost-Medium";
 }
 .heading-L-Sans{
-    font: 25px / 25px "OpenSans-Regular";
+    font: 25px / 160% "OpenSans-Regular";
 }
 .heading-M{
-    font: 20px / 20px "Jost-Regular";
+    font: 20px / 160% "Jost-Regular";
 }
 .heading-M-Sans{
-    font: 20px / 25px "OpenSans-Regular";
+    font: 20px / 160% "OpenSans-Regular";
+}
+.heading-M-Inter{
+    font: 20px / 160% "Inter-Regular";
 }
 .heading-M-SansSBI{
-    font: 20px / 24px "OpenSans-SemiBoldItalic";
+    font: 20px / 150.5% "OpenSans-SemiBoldItalic";
 }
 .heading-M-JM{
-    font: 20px / 25px "Jost-Medium";
+    font: 20px / 160% "Jost-Medium";
 }
 .heading-M-JSB{
-    font: 20px / 25px "Jost-SemiBold";
+    font: 20px / 160% "Jost-SemiBold";
 }
 .heading-S{
-    font: 18px / 25px "OpenSans-Regular";
+    font: 18px / 160% "OpenSans-Regular";
 }
 .primary-btn{
     border-radius: 5px;

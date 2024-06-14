@@ -1,0 +1,17 @@
+.header-main {
+  padding-top: 21px;
+}
+.header-main .container .header-inr .logo-main .logo-otr .logo-img {
+  width: 260px;
+  height: 55px;
+  object-fit: contain;
+}
+.header-main .container .header-inr .menu-action {
+  gap: 0 45px;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul {
+  gap: 0 45px;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
+  color: var(--primary03);
+}

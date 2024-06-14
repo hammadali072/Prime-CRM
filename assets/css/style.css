@@ -1,3 +1,21 @@
+.header-main {
+  padding-top: 21px;
+}
+.header-main .container .header-inr .logo-main .logo-otr .logo-img {
+  width: 260px;
+  height: 55px;
+  object-fit: contain;
+}
+.header-main .container .header-inr .menu-action {
+  gap: 0 45px;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul {
+  gap: 0 45px;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
+  color: var(--primary03);
+}
+
 html {
   --primary01: #49deff;
   --primary02: #4fffdf;
@@ -17,4 +35,114 @@ html {
   --ligthgreen2: #47dd56;
   --lightblue1: #1eb1e5;
   --lightblue2: #47cfff;
+  --grey: #c1c1c1;
+}
+
+.header-hero {
+  position: relative;
+}
+.header-hero .hero {
+  position: relative;
+}
+.header-hero .hero .container .hero-inr {
+  position: relative;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr {
+  padding-top: 120px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .heading {
+  color: var(--primary03);
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr > .desc {
+  padding-block: 21px 34px;
+  color: var(--secondary01);
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .action-main {
+  padding-block: 0px 76px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .action-main .action-otr .how-it-works {
+  background-color: var(--white);
+  color: var(--primary03);
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr {
+  position: relative;
+  padding-block: 56px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .pattern-otr .pattern-img {
+  width: 42px;
+  height: 118px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .pattern-otr:first-child {
+  padding-right: 22px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .pattern-otr:last-child {
+  padding-right: 22px;
+  transform: rotateY(180deg);
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .badge-otr .badge-img {
+  margin-right: 22px;
+  width: 109px;
+  height: 140px;
+  object-fit: contain;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .content-otr {
+  padding-left: 22px;
+  position: relative;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .content-otr .desc {
+  margin-block: 5px 7px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .content-otr .rating-otr .icon-otr .icon {
+  font-size: 25px;
+  color: var(--yellow);
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .content-otr .rating-otr .icon-otr:not(:last-child) {
+  margin-right: 8px;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr .content-otr::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: var(--grey);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header-hero .hero .container .hero-inr .col-content-otr .col-content-inr .five-star-otr .five-star-inr::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary02);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-hero .hero .container .hero-inr .col-img-otr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 859px;
+}
+.header-hero .hero .container .hero-inr .col-img-otr .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-hero .hero .container .hero-inr::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary02);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.header-hero::after {
+  content: url("../img/hero-vector.png");
+  max-width: 100%;
+  height: 1028px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
