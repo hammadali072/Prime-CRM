@@ -1,17 +1,29 @@
 .header-main {
   padding-top: 21px;
 }
+.header-main .container .header-inr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-main .container .header-inr .logo-main .logo-otr .logo-img {
   width: 260px;
   height: 55px;
   object-fit: contain;
 }
 .header-main .container .header-inr .menu-action {
+  display: flex;
   gap: 0 45px;
+  align-items: center;
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul {
+  display: flex;
   gap: 0 45px;
+  align-items: center;
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
   color: var(--primary03);
+}
+.header-main .container .header-inr .menu-action .action-otr .login {
+  display: flex;
 }

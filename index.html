@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeCRM</title>
     <link rel="shortcut icon" href="./assets/img/fav-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/util.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/libs/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <section class="header-hero">
         <header class="header-main">
             <div class="container">
-                <div class="header-inr d-flex justify-content-between align-items-center">
+                <div class="header-inr">
                     <div class="logo-main">
                         <a href="#" class="navbar-brand logo-otr">
                             <img src="./assets/img/logo-dark.png" alt="Logo" class="logo-img">
                         </a>
                     </div>
-                    <div class="menu-action d-flex align-items-center">
+                    <div class="menu-action">
                         <nav class="menu-otr">
-                            <ul class="menu-ul d-flex my-0 align-items-center">
+                            <ul class="menu-ul">
                                 <li class="menu-li">
                                     <a href="#" class="heading-M-JM menu-a">Solution</a>
                                 </li>
@@ -45,7 +46,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="action-otr d-flex">
+                        <div class="action-otr">
                             <a href="#" class="login primary-btn">Login</a>
                         </div>
                     </div>
@@ -54,22 +55,22 @@
         </header>
         <div class="hero">
             <div class="container">
-                <div class="hero-inr row align-items-center">
+                <div class="hero-inr row">
                     <div class="col-5 col-content-otr">
                         <div class="col-content-inr">
-                            <h1 class="heading my-0 heading-h1">The CRM Platform Your Whole Business Will Love</h1>
-                            <p class="desc my-0 heading-L-Sans">Provide excellent customer service. Answer more tickets
+                            <h1 class="heading heading-h1">The CRM Platform Your Whole Business Will Love</h1>
+                            <p class="desc heading-L-Sans">Provide excellent customer service. Answer more tickets
                                 all-in-one Primarily software.</p>
-                            <div class="action-main d-flex align-items-center">
-                                <div class="d-flex action-otr">
+                            <div class="action-main">
+                                <div class="action-otr">
                                     <a href="#" class="primary-btn get-start">Get Started</a>
                                 </div>
-                                <div class="d-flex action-otr">
-                                    <a href="#" class="primary-btn how-it-works heading-M-JSB">How it
+                                <div class="action-otr">
+                                    <a href="#" class="custom-btn how-it-works heading-M-JSB">How it
                                         Work</a>
                                 </div>
                             </div>
-                            <div class="ps-0 five-star-otr">
+                            <div class="five-star-otr">
                                 <div class="five-star-inr d-flex align-items-center">
                                     <div class="pattern-otr">
                                         <img src="./assets/img/5-star-pattern.svg" alt="" class="pattern-img">
@@ -112,7 +113,668 @@
             </div>
         </div>
     </section>
+    <section class="explore-feature">
+        <div class="container">
+            <div class="explore-feature-inr">
+                <div class="wrapper mx-auto text-center">
+                    <h2 class="heading heading-h2">Explore Premium Features</h2>
+                    <p class="desc heading-M-Sans">Unique and powerful suite of software to run your entire business,
+                        brought to you by a company with the long term visionto transform the way you work.</p>
+                </div>
+                <div class="row">
+                    <div class="col col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr-1 icon-otr">
+                                <img src="./assets/img/setting-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <a href="#" class="heading heading-h4">Powerful Settings</a>
+                            <p class="desc heading-M-Sans">Provide excellent customer service. Answer more tickets.</p>
+                        </div>
+                    </div>
+                    <div class="col col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr-2 icon-otr">
+                                <img src="./assets/img/account-set-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <a href="#" class="heading heading-h4">User Friendly</a>
+                            <p class="desc heading-M-Sans">Use Timeline to plan projects right how the pieces fit
+                                together.</p>
+                        </div>
+                    </div>
+                    <div class="col col-card-otr">
+                        <div class="col-card-inr">
+                            <div class="icon-otr-3 icon-otr">
+                                <img src="./assets/img/setting-good-icon.svg" alt="Icon" class="icon">
+                            </div>
+                            <a href="#" class="heading heading-h4">Integrated Platform</a>
+                            <p class="desc heading-M-Sans">Vivamus massa eleifend etiam neque odio feugiat dolor est.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lead-management">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-img-otr">
+                    <div class="col-img-inr">
+                        <img src="./assets/img/lead-management.png" alt="Image" class="img">
+                    </div>
+                </div>
+                <div class="col-6 col-content-otr">
+                    <div class="col-content-inr">
+                        <div class="content-otr">
+                            <h2 class="heading heading-h2 text-capitalize">Allocate Leads and Simplify Lead Management
+                            </h2>
+                            <p class="desc heading-M-Sans">Unique and powerful suite of software to run your entire
+                                business, brought to you by a company with the long term vision to transform the way you
+                                work.</p>
+                        </div>
+                        <div class="cards-otr">
+                            <ul class="row card-ul">
+                                <li class="col card-otr">
+                                    <h4 class="heading heading-h4">Lead Generation</h4>
+                                    <p class="desc heading-M-Sans">Guide Helps Companies Increase Customer & Agent
+                                        Satisfaction, Also Reducing Support Costs.</p>
+                                </li>
+                                <li class="col card-otr">
+                                    <h4 class="heading heading-h4">Team Email</h4>
+                                    <p class="desc heading-M-Sans">Group Your Contacts By Location, Age, And Almost Any
+                                        Behavior With Advanced Segmentation Tools.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-management">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-content-otr">
+                    <div class="col-content-inr">
+                        <div class="content-otr">
+                            <h2 class="heading heading-h2 text-capitalize">Ways a project management tool can help your
+                                team
+                            </h2>
+                            <p class="desc heading-M-Sans text-capitalize">Unique and powerful suite of software to run
+                                your entire
+                                business, brought to you by a company with the long term vision to transform the way you
+                                work.</p>
+                        </div>
+                        <div class="cards-otr">
+                            <ul class="row card-ul">
+                                <li class="col-6 card-otr">
+                                    <div class="icon-otr">
+                                        <img src="./assets/img/security-icon.svg" alt="Icon" class="icon">
+                                    </div>
+                                    <div class="content-otr">
+                                        <h4 class="heading heading-h4">CRM Security</h4>
+                                        <p class="desc heading-M-Sans text-capitalize">cards and make more sales while
+                                            chatting</p>
+                                    </div>
+                                </li>
+                                <li class="col-6 card-otr">
+                                    <div class="icon-otr">
+                                        <img src="./assets/img/announcement-icon.svg" alt="Icon" class="icon">
+                                    </div>
+                                    <div class="content-otr">
+                                        <h4 class="heading heading-h4">Marketing Hub</h4>
+                                        <p class="desc heading-M-Sans text-capitalize">Show off your goods in elegant
+                                            product cards and
+                                            mak.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="action-otr">
+                            <a href="#" class="primary-btn get-start">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-img-otr">
+                    <div class="col-img-inr">
+                        <img src="./assets/img/project-management.png" alt="Image" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="client-logos">
+        <div class="container">
+            <div class="client-logos-inr">
+                <div class="wrapper mx-auto text-center text-capitalize">
+                    <h2 class="heading heading-h2">Trusted by more than 75 million users globally</h2>
+                    <p class="desc heading-M-Sans">Unique and powerful suite of software to run your entire business,
+                        brought to you transform the way you work.</p>
+                </div>
+                <div class="client-logo">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-1.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-2.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-3.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-4.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-5.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-6.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-7.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-8.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-9.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-10.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-11.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-12.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-13.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-1.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-2.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-3.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-4.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-5.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-6.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-7.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-8.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-9.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-10.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-11.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-12.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-13.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-1.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-2.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-3.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-4.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-5.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-6.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-7.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-8.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-9.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-10.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-11.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-12.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="logo-otr">
+                                    <img src="./assets/img/client-logo-13.png" alt="Client Logo" class="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-inr">
+                <div class="row">
+                    <div class="col col-content-otr">
+                        <h2 class="heading heading-h2">Sell | Serve | Automate</h2>
+                        <p class="desc heading-M-Sans">Boost enrolment and manage student lifecycle with our 360° CRM
+                        </p>
+                    </div>
+                    <div class="col col-contact-otr">
+                        <h6 class="heading heading-M">*Your Business Email Address</h6>
+                        <form class="form-main">
+                            <div class="input-otr">
+                                <input type="email" class="input-email heading-M" placeholder="Email">
+                            </div>
+                            <div class="action-otr">
+                                <button class="input-submit heading-M-JSB">Try Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="dashboard-otr">
+                    <img src="./assets/img/dashboard.png" alt="Dashboard" class="dashboard-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-work">
+        <div class="container">
+            <div class="row how-it-work-inr">
+                <div class="col-6 col-content-otr">
+                    <div class="col-content-inr">
+                        <h2 class="heading heading-h2 text-capitalize">How It works</h2>
+                        <p class="desc heading-M-Sans">Unique and powerful suite of software to run your business,
+                            brought
+                            to you by vision to you work.</p>
+                        <div class="cards-otr">
+                            <ul class="row card-ul">
+                                <li class="col card-otr">
+                                    <h4 class="heading heading-h4">Download Our App</h4>
+                                    <p class="desc heading-M-Sans">CentraHub CRM automatically logs in any reactions
+                                        made by your leads, prospects</p>
+                                </li>
+                                <li class="col card-otr">
+                                    <h4 class="heading heading-h4">List Your Company Detail</h4>
+                                    <p class="desc heading-M-Sans">Customers making it easier for your sales team
+                                        members
+                                        audience they make contact.</p>
+                                </li>
+                                <li class="col card-otr">
+                                    <h4 class="heading heading-h4">Enjoy Your Business</h4>
+                                    <p class="desc heading-M-Sans">customers, making it easier for your sales team
+                                        members
+                                        audience before make contact.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-img-otr">
+            <img src="./assets/img/how-it-work.png" alt="Image" class="work-img">
+        </div>
+    </section>
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-inr">
+                <div class="wrapper mx-auto text-center">
+                    <h2 class="heading heading-h2">Deliver End-To-End Retail Billing & Solutions</h2>
+                    <p class="desc heading-M-Sans">Unique and powerful suite of software to run your entire business,
+                        brought to you by a company with the long term vision to transform the way you work.</p>
+                </div>
+                <div class="row content-otr">
+                    <div class="col price-deal price-deal1">
+                        <div class="d-flex icon-heading">
+                            <div class="icon-otr">
+                                <svg class="icon" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.6419 17.7458L14.8672 25.3762C14.7992 25.5593 14.6769 25.7172 14.5165 25.8287C14.3562 25.9402 14.1655 26 13.9702 26C13.7749 26 13.5843 25.9402 13.4239 25.8287C13.2636 25.7172 13.1412 25.5593 13.0732 25.3762L10.2985 17.7458C10.2501 17.6142 10.1736 17.4948 10.0745 17.3957C9.97542 17.2966 9.85598 17.2201 9.72446 17.1717L2.09406 14.397C1.91095 14.329 1.75303 14.2066 1.64151 14.0463C1.52999 13.886 1.47021 13.6953 1.47021 13.5C1.47021 13.3047 1.52999 13.114 1.64151 12.9537C1.75303 12.7934 1.91095 12.671 2.09406 12.603L9.72446 9.82832C9.85598 9.77986 9.97542 9.70343 10.0745 9.60432C10.1736 9.50521 10.2501 9.38577 10.2985 9.25424L13.0732 1.62384C13.1412 1.44073 13.2636 1.28281 13.4239 1.17129C13.5843 1.05977 13.7749 1 13.9702 1C14.1655 1 14.3562 1.05977 14.5165 1.17129C14.6769 1.28281 14.7992 1.44073 14.8672 1.62384L17.6419 9.25424C17.6904 9.38577 17.7668 9.50521 17.8659 9.60432C17.965 9.70343 18.0844 9.77986 18.216 9.82832L25.8464 12.603C26.0295 12.671 26.1874 12.7934 26.2989 12.9537C26.4104 13.114 26.4702 13.3047 26.4702 13.5C26.4702 13.6953 26.4104 13.886 26.2989 14.0463C26.1874 14.2066 26.0295 14.329 25.8464 14.397L18.216 17.1717C18.0844 17.2201 17.965 17.2966 17.8659 17.3957C17.7668 17.4948 17.6904 17.6142 17.6419 17.7458V17.7458Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="heading heading-h3">Starter</h3>
+                        </div>
+                        <div class="card-otr">
+                            <div class="card-inr">
+                                <h1 class="heading heading-h1">$45/Mo</h1>
+                                <p class="desc heading-M-Sans">Includes <span class="text-inr">1,000</span> marketing
+                                    contacts. Additional
+                                    marketing contacts are sold in increments of <span class="text-inr">1,000</span>
+                                    from</p>
+                                <div class="feature-otr">
+                                    <div class="feature-ul">
+                                        <div class="d-flex feature-li feat-1">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Outbound email and <span
+                                                    class="text-inr">in-product</span></p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-2">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">messaging</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-3">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans"><span class="text-inr">Push messages</span> &
+                                                notifications</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-4">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Custom bots</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-5">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Mobile Carousels</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-6">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Banner messages</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-7">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2 not-avail"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans"><span class="text-inr">Multi-channel</span>
+                                                compaigns</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-8">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2 not-avail"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">A/B testing & control groups</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="action-otr">
+                                    <a href="#" class="action-btn heading-M-JSB text-center">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col price-deal price-deal2">
+                        <div class="d-flex icon-heading">
+                            <div class="icon-otr">
+                                <svg class="icon" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.8338 23.6802L15.1338 31.0068C15.0539 31.2221 14.91 31.4077 14.7215 31.5389C14.5329 31.67 14.3088 31.7403 14.0791 31.7403C13.8495 31.7403 13.6253 31.67 13.4368 31.5389C13.2482 31.4077 13.1044 31.2221 13.0244 31.0068L10.3244 23.6802C10.2675 23.5256 10.1776 23.3851 10.0611 23.2686C9.94452 23.152 9.80408 23.0622 9.64944 23.0052L2.32287 20.3052C2.10757 20.2253 1.92189 20.0814 1.79076 19.8929C1.65964 19.7043 1.58936 19.4802 1.58936 19.2505C1.58936 19.0209 1.65964 18.7967 1.79076 18.6082C1.92189 18.4196 2.10757 18.2757 2.32287 18.1958L9.64944 15.4958C9.80408 15.4388 9.94452 15.349 10.0611 15.2324C10.1776 15.1159 10.2675 14.9755 10.3244 14.8208L13.0244 7.49426C13.1044 7.27896 13.2482 7.09328 13.4368 6.96215C13.6253 6.83103 13.8495 6.76074 14.0791 6.76074C14.3088 6.76074 14.5329 6.83103 14.7215 6.96215C14.91 7.09328 15.0539 7.27896 15.1338 7.49426L17.8338 14.8208C17.8908 14.9755 17.9807 15.1159 18.0972 15.2324C18.2137 15.349 18.3542 15.4388 18.5088 15.4958L25.8354 18.1958C26.0507 18.2757 26.2364 18.4196 26.3675 18.6082C26.4986 18.7967 26.5689 19.0209 26.5689 19.2505C26.5689 19.4802 26.4986 19.7043 26.3675 19.8929C26.2364 20.0814 26.0507 20.2253 25.8354 20.3052L18.5088 23.0052C18.3542 23.0622 18.2137 23.152 18.0972 23.2686C17.9807 23.3851 17.8908 23.5256 17.8338 23.6802V23.6802Z"
+                                        stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M23.0776 1.25V8" stroke="#303030" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M26.4526 4.625H19.7026" stroke="#303030" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M29.8276 9.125V13.625" stroke="#303030" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M32.0776 11.375H27.5776" stroke="#303030" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="heading heading-h3">Professional</h3>
+                        </div>
+                        <div class="card-otr">
+                            <div class="card-inr">
+                                <div class="price-icon d-flex justify-content-between align-items-center">
+                                    <h1 class="heading heading-h1">$60/Mo</h1>
+                                    <div class="icon-svg">
+                                        <svg class="icon" viewBox="0 0 68 68" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M31.0422 7.46272C32.0481 4.94842 35.6072 4.94842 36.613 7.46272L37.714 10.2149C38.4579 12.0745 40.7804 12.6968 42.3545 11.4583L44.6841 9.62534C46.8123 7.95081 49.8946 9.73037 49.5085 12.4107L49.0859 15.3447C48.8003 17.3271 50.5005 19.0273 52.483 18.7417L55.4169 18.3191C58.0973 17.9331 59.8768 21.0154 58.2023 23.1436L56.3693 25.4732C55.1308 27.0472 55.7531 29.3697 57.6127 30.1136L60.3649 31.2146C62.8792 32.2204 62.8792 35.7796 60.3649 36.7854L57.6127 37.8864C55.7531 38.6303 55.1308 40.9528 56.3693 42.5268L58.2023 44.8564C59.8768 46.9846 58.0973 50.0669 55.4169 49.6809L52.4829 49.2583C50.5005 48.9727 48.8003 50.6729 49.0859 52.6553L49.5085 55.5893C49.8946 58.2696 46.8123 60.0492 44.6841 58.3747L42.3545 56.5417C40.7804 55.3032 38.4579 55.9255 37.714 57.7851L36.613 60.5373C35.6072 63.0516 32.0481 63.0516 31.0422 60.5373L29.9413 57.7851C29.1973 55.9255 26.8749 55.3032 25.3008 56.5417L22.9712 58.3747C20.843 60.0492 17.7607 58.2696 18.1468 55.5893L18.5694 52.6553C18.8549 50.6729 17.1548 48.9727 15.1723 49.2583L12.2384 49.6809C9.55801 50.0669 7.77845 46.9846 9.45298 44.8564L11.2859 42.5268C12.5245 40.9528 11.9021 38.6303 10.0425 37.8864L7.29035 36.7854C4.77605 35.7796 4.77605 32.2204 7.29035 31.2146L10.0425 30.1136C11.9021 29.3697 12.5245 27.0472 11.2859 25.4732L9.45298 23.1436C7.77845 21.0154 9.55801 17.9331 12.2384 18.3191L15.1723 18.7417C17.1548 19.0273 18.8549 17.3271 18.5694 15.3447L18.1468 12.4107C17.7607 9.73037 20.843 7.95081 22.9712 9.62534L25.3008 11.4583C26.8749 12.6968 29.1973 12.0745 29.9413 10.2149L31.0422 7.46272Z"
+                                                fill="#39DD49" />
+                                            <path d="M44.3276 23.5L24.3276 43.5" stroke="#303030" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M27.3276 30.5C29.5368 30.5 31.3276 28.7091 31.3276 26.5C31.3276 24.2909 29.5368 22.5 27.3276 22.5C25.1185 22.5 23.3276 24.2909 23.3276 26.5C23.3276 28.7091 25.1185 30.5 27.3276 30.5Z"
+                                                stroke="#303030" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M41.3276 44.5C43.5368 44.5 45.3276 42.7091 45.3276 40.5C45.3276 38.2909 43.5368 36.5 41.3276 36.5C39.1185 36.5 37.3276 38.2909 37.3276 40.5C37.3276 42.7091 39.1185 44.5 41.3276 44.5Z"
+                                                stroke="#303030" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="desc heading-M-Sans">Includes <b>2,000</b> marketing contacts.
+                                    Additional
+                                    marketing contacts are sold in increments of <b>5,000</b> from</p>
+                                <div class="feature-otr">
+                                    <div class="feature-ul">
+                                        <div class="d-flex feature-li feat-1">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Outbound email and <span
+                                                    class="text-inr">in-product</span></p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-2">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">messaging</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-3">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans"><span class="text-inr">Push messages</span> &
+                                                notifications</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-4">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Custom bots</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-5">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Mobile Carousels</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-6">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Banner messages</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-7">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans"><span class="text-inr">Multi-channel</span>
+                                                compaigns</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-8">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">A/B testing & control groups</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-9">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Website traffic analytics</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-10">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Compaign reporting</p>
+                                        </div>
+                                        <div class="d-flex feature-li feat-11">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans"><span class="text-inr">Custom
+                                                    reporting</span></p>
+                                        </div>
+                                        <div class="d-flex feature-li">
+                                            <div class="icon-otr">
+                                                <i class="bi bi-check2"></i>
+                                            </div>
+                                            <p class="desc heading-M-Sans">Salesforce integration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="action-otr">
+                                    <a href="#" class="action-btn heading-M-JSB text-center">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper1 = new Swiper(".mySwiper1", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            autoplay: true,
+            loop: true,
+        });
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            autoplay: true,
+            loop: true,
+        });
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            autoplay: true,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>

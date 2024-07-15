@@ -3,6 +3,10 @@
 
     .container {
         .header-inr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
             .logo-main {
                 .logo-otr {
                     .logo-img {
@@ -14,17 +18,27 @@
             }
 
             .menu-action {
+                display: flex;
                 gap: 0 45px;
+                align-items: center;
 
                 .menu-otr {
                     .menu-ul {
+                        display: flex;
                         gap: 0 45px;
+                        align-items: center;
 
                         .menu-li {
                             .menu-a {
                                 color: var(--primary03);
                             }
                         }
+                    }
+                }
+
+                .action-otr {
+                    .login {
+                        display: flex;
                     }
                 }
             }
