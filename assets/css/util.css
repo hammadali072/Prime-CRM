@@ -27,6 +27,8 @@ a {
   display: inline-block;
 }
 .container{
+    width: 1400px;
+    max-width: 100%;
     padding-block: 15px;
 }
 body {
