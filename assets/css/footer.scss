@@ -1,0 +1,250 @@
+.footer {
+    background-color: var(--primary03);
+    padding-top: 124px;
+
+    .container {
+        .footer-inr {
+            .logo-icon-otr {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo-main {
+                    .logo-otr {
+                        .logo {
+                            width: 260px;
+                            height: 55px;
+                            object-fit: contain;
+                        }
+
+                    }
+                }
+
+                .social-otr {
+                    .social-ul {
+                        gap: 0 27px;
+
+                        .social-li {
+                            .social-a {
+                                .icon {
+                                    font-size: 20px;
+                                    color: var(--white);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row {
+                position: relative;
+                align-items: baseline;
+                margin-block: 56px;
+
+                .col-links-otr {
+                    display: flex;
+                    gap: 0 24px;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .col-link-otr {
+                        .col-link-inr {
+                            .heading {
+                                color: var(--white);
+                            }
+
+                            .link-ul {
+                                margin-top: 68px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 11px 0px;
+
+                                .link-li {
+                                    .link-a {
+                                        color: var(--white);
+                                        transition: all 0.3s;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .col-link-otr:not(:last-child) {
+                        .col-link-inr {
+                            .link-ul {
+                                .link-li {
+                                    .link-a {
+                                        &:hover {
+                                            color: var(--lightblue2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .col-link-otr:last-child {
+                        .col-link-inr {
+                            .link-ul {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 22px 0;
+
+                                .link-li {
+                                    padding: 19px 21px;
+                                    border: 1px solid transparent;
+                                    background: linear-gradient(var(--primary03), var(--primary03)) padding-box,
+                                        linear-gradient(90deg, #e0e0e000, #e0e0e0) border-box;
+                                    border-radius: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .col-news-otr {
+                    .col-news-inr {
+                        .heading-otr {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .heading {
+                                color: var(--white);
+
+                            }
+
+                            .icon-otr {
+                                .icon-a {
+                                    padding: 14px 16px;
+                                    border: 1px solid var(--secondary05);
+                                    border-radius: 100%;
+
+                                    .icon {
+                                        color: var(--white);
+                                        font-size: 12px;
+                                        -webkit-text-stroke: 0.5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .content-otr {
+                            .content-inr {
+                                margin-top: 62px;
+                                border-radius: 30px;
+                                overflow: hidden;
+                                position: relative;
+
+                                .img-otr {
+                                    width: 100%;
+                                    height: 246px;
+
+                                    .news-img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        object-position: center;
+                                        transition: all 0.3s;
+                                    }
+                                }
+
+                                .overlay {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba($color: #000000, $alpha: 0.25);
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transition: all 0.3s;
+
+                                    .action-btn {
+                                        position: absolute;
+                                        top: 60%;
+                                        left: 50%;
+                                        transform: translate(-50%, -60%);
+                                        padding: 14px 44px;
+                                        color: var(--primary03);
+                                        background-color: #ffffffbf;
+                                        border-radius: 5px;
+
+                                        transition: all 0.3s;
+                                    }
+                                }
+
+                                &:hover {
+                                    .img-otr {
+                                        .news-img {
+                                            transform: scale(1.1);
+                                        }
+                                    }
+
+                                    .overlay {
+                                        visibility: visible;
+                                        opacity: 1;
+
+                                        .action-btn {
+                                            top: 50%;
+                                            transform: translate(-50%, -50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--secondary05);
+                    position: absolute;
+                    top: -13px;
+                    left: 0;
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--secondary05);
+                    position: absolute;
+                    top: 64px;
+                    left: 0;
+                }
+            }
+
+            .copyright-otr {
+                padding-block: 27px 12px;
+                position: relative;
+
+                .text {
+                    color: var(--white);
+
+                    .link {
+                        color: var(--white);
+
+                        &:hover {
+                            color: var(--lightblue2);
+                        }
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    border: 1px solid var(--secondary05);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
