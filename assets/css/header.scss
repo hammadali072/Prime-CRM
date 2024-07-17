@@ -31,6 +31,29 @@
                         .menu-li {
                             .menu-a {
                                 color: var(--primary03);
+                                transition: all 0.3s;
+                                position: relative;
+
+                                &::after {
+                                    content: "";
+                                    width: 50%;
+                                    height: 2px;
+                                    background-color: var(--primary03);
+                                    transition: all 0.3s;
+                                    position: absolute;
+                                    bottom: 2px;
+                                    left: 0;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                }
+
+                                &:hover {
+                                    &::after {
+                                        width: 100%;
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+                                }
                             }
                         }
                     }

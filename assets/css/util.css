@@ -82,11 +82,13 @@ body {
     padding: 14px 39px;
     color: var(--white);
     position: relative;
+    z-index: 2;
     overflow: hidden;
-    background: var(--primary03);
+    border: 1px solid transparent;
+    transition: all 0.3s;
 }
 .primary-btn::after{
-    /* content: ""; */
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -94,4 +96,34 @@ body {
     left: 0;
     border-radius: 5px;
     background: var(--primary03);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
+    transition: all 0.3s;
+}
+.primary-btn:hover{
+    background-color: var(--white);
+    border: 1px solid black;
+}
+.primary-btn:hover .text{
+    color: var(--primary03);
+    animation: moveUpInitial 0.2s forwards, moveUpEnd 0.2s forwards 0.2s !important;
+}
+.primary-btn:hover::after {
+  clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+}
+.primary-btn:not(:hover)::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+@keyframes moveUpInitial {
+    100%{
+        transform: translate3d(0, -105%, 0);
+    }
+}
+@keyframes moveUpEnd{
+    0%{
+        transform: translate3d(0, 100%, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
 }

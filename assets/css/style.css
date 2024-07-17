@@ -24,6 +24,25 @@
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
   color: var(--primary03);
+  transition: all 0.3s;
+  position: relative;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--primary03);
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a:hover::after {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 .header-main .container .header-inr .menu-action .action-otr .login {
   display: flex;
@@ -333,6 +352,50 @@ body {
   bottom: 0;
   left: 0;
 }
+.header-hero .hero .icons-otr .icon-otr .icon {
+  position: absolute;
+}
+.header-hero .hero .icons-otr .icon-otr .plus-icon {
+  font-size: 22px;
+  color: #e1e1e1;
+}
+.header-hero .hero .icons-otr .icon-otr .plus-icon-1 {
+  top: 69px;
+  left: 164px;
+}
+.header-hero .hero .icons-otr .icon-otr .plus-icon-2 {
+  top: 40%;
+  left: 45%;
+}
+.header-hero .hero .icons-otr .icon-otr .circle-icon {
+  font-size: 38px;
+}
+.header-hero .hero .icons-otr .icon-otr .circle-icon-1 {
+  color: rgba(255, 255, 255, 0.3960784314);
+  top: 34px;
+  right: 150px;
+}
+.header-hero .hero .icons-otr .icon-otr .circle-icon-2 {
+  color: #f5Deba;
+  bottom: 35%;
+  left: 164px;
+}
+.header-hero .hero .icons-otr .icon-otr .play-icon {
+  font-size: 54px;
+  color: #dfdaff;
+}
+.header-hero .hero .icons-otr .icon-otr .play-icon-no {
+  top: 32px;
+  left: 40%;
+  transform: rotateZ(20deg);
+}
+.header-hero .hero .icons-otr .icon-otr .play-icon-fill {
+  font-size: 36px;
+  color: #cfe8ea;
+  transform: rotateZ(-30deg);
+  bottom: 30%;
+  left: 45%;
+}
 .header-hero::after {
   content: url("../img/hero-vector.png");
   max-width: 100%;
@@ -363,6 +426,7 @@ body {
 }
 .explore-feature .container .explore-feature-inr .row .col-card-otr .col-card-inr {
   background-color: var(--secondary03);
+  border: 1px solid transparent;
   border-radius: 10px;
   padding: 50px 47px;
   transition: all 0.4s;
@@ -433,6 +497,7 @@ body {
 .explore-feature .container .explore-feature-inr .row .col-card-otr .col-card-inr:hover {
   background-color: var(--white);
   box-shadow: 0 28px 57px rgba(190, 190, 190, 0.1450980392);
+  background: linear-gradient(var(--white), var(--white)) padding-box, linear-gradient(0deg, #ebebeb, var(--white)) border-box;
 }
 
 .lead-management {
@@ -448,16 +513,6 @@ body {
   height: 100%;
   object-fit: contain;
   box-shadow: -33px 60px 72px rgba(155, 155, 155, 0.1254901961);
-}
-.lead-management .container .row .col-img-otr .col-img-inr::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
 }
 .lead-management .container .row .col-content-otr .col-content-inr {
   padding-left: 48px;
@@ -501,13 +556,17 @@ body {
   left: 23px;
 }
 .lead-management::before {
-  content: url(../img/section-vector.png);
+  content: "";
+  background: url(/assets/img/section-vector.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
   transform: rotateX(180deg) rotateZ(180deg);
-  max-width: 100%;
-  height: 90%;
+  width: 100%;
+  height: 1077px;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   z-index: -1;
 }
 
@@ -559,20 +618,14 @@ body {
   object-fit: contain;
   box-shadow: 40px 48px 105px rgba(155, 155, 155, 0.1254901961);
 }
-.project-management .container .row .col-img-otr .col-img-inr::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -2;
-}
 .project-management::before {
-  content: url(../img/section-vector.png);
-  max-width: 100%;
-  height: 100%;
+  content: "";
+  background: url(/assets/img/section-vector.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  width: 100%;
+  height: 1077px;
   position: absolute;
   right: 0;
   top: 0;
@@ -1054,15 +1107,7 @@ body {
 .pricing .container .pricing-inr .content-otr .price-deal .card-otr .card-inr .action-otr .action-btn {
   width: 100%;
   padding: 26px;
-  background-color: #eaeaea;
-  color: var(--primary03);
   border-radius: 15px;
-  transition: all 0.3s;
-}
-.pricing .container .pricing-inr .content-otr .price-deal .card-otr .card-inr .action-otr .action-btn:hover {
-  background-color: var(--primary03);
-  color: var(--white);
-  box-shadow: 0px 28px 57px rgba(190, 190, 190, 0.1450980392);
 }
 .pricing .container .pricing-inr .content-otr .price-deal1 .icon-heading .icon-otr {
   background-color: var(--primary03);

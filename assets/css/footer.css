@@ -18,6 +18,10 @@
 .footer .container .footer-inr .logo-icon-otr .social-otr .social-ul .social-li .social-a .icon {
   font-size: 20px;
   color: var(--white);
+  transition: all 0.3s;
+}
+.footer .container .footer-inr .logo-icon-otr .social-otr .social-ul .social-li .social-a .icon:hover {
+  color: var(--lightblue2);
 }
 .footer .container .footer-inr .row {
   position: relative;
