@@ -1,10 +1,8 @@
+/* **********************************
+   *******Header Section Start*******
+   ********************************** */
 .header-main {
-  padding-top: 21px;
-}
-.header-main .container .header-inr {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 41px;
 }
 .header-main .container .header-inr .logo-main .logo-otr .logo-img {
   width: 260px;
@@ -12,29 +10,25 @@
   object-fit: contain;
 }
 .header-main .container .header-inr .menu-action {
-  display: flex;
   gap: 0 45px;
-  align-items: center;
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul {
-  display: flex;
   gap: 0 45px;
-  align-items: center;
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
-  color: var(--primary03);
-  transition: all 0.3s;
   position: relative;
+  color: var(--bs-primary-03);
+  transition: all 0.3s;
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a::after {
   content: "";
   width: 50%;
   height: 2px;
-  background-color: var(--primary03);
-  transition: all 0.3s;
+  background-color: var(--bs-primary-03);
   position: absolute;
   bottom: 2px;
   left: 0;
+  transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
 }
@@ -43,6 +37,7 @@
   visibility: visible;
   opacity: 1;
 }
-.header-main .container .header-inr .menu-action .action-otr .login {
-  display: flex;
-}
+
+/* **********************************
+   *********Header Section End*******
+   ********************************** */
