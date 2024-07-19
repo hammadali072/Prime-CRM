@@ -3,7 +3,7 @@
    ********************************** */
 .footer {
   background-color: var(--bs-primary-03);
-  padding-top: 124px;
+  padding-top: 100px;
 }
 .footer .container .footer-inr .logo-icon-otr {
   display: flex;
@@ -74,7 +74,7 @@
 }
 .footer .container .footer-inr .row .col-news-otr .col-news-inr .heading-otr .icon-otr .icon-a {
   padding: 14px 16px;
-  border: 1px solid var(--bs-grey);
+  border: 1px solid var(--bs-tint-grey);
   border-radius: 100%;
 }
 .footer .container .footer-inr .row .col-news-otr .col-news-inr .heading-otr .icon-otr .icon-a .icon {
@@ -136,7 +136,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  background-color: var(--bs-grey);
+  background-color: var(--bs-tint-grey);
   position: absolute;
   top: -13px;
   left: 0;
@@ -145,7 +145,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  background-color: var(--bs-grey);
+  background-color: var(--bs-tint-grey);
   position: absolute;
   top: 64px;
   left: 0;
@@ -168,7 +168,7 @@
   content: "";
   width: 100%;
   height: 1px;
-  border: 1px solid var(--bs-grey);
+  border: 1px solid var(--bs-tint-grey);
   position: absolute;
   top: 0;
   left: 0;

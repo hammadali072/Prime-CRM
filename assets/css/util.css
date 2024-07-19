@@ -45,6 +45,9 @@ body {
 .heading-h2{
     font: 40px/ 133.2% "Jost-SemiBold";
 }
+.heading-h2-JM{
+    font: 40px/ 133.2% "Jost-Medium";
+}
 .heading-h3{
     font: 35px / 133.2% "Jost-Medium";
 }
@@ -87,6 +90,9 @@ body {
 .heading-S{
     font: 18px / 160% "OpenSans-Regular";
 }
+.heading-SB{
+    font: 18px / 160% "OpenSans-SemiBold";
+}
 .primary-btn{
     display: flex;
     border-radius: 5px;
@@ -128,7 +134,7 @@ body {
 }
 @keyframes moveUpInitial {
     100%{
-        transform: translateY(-105%);
+        transform: translateY(-120%);
     }
 }
 @keyframes moveUpEnd{
