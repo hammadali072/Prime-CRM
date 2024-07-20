@@ -5,7 +5,7 @@
   position: relative;
 }
 .journal .container .journal-inr {
-  padding-block: 107px;
+  padding-block: 90px;
 }
 .journal .container .journal-inr .wrapper {
   width: 700px;
@@ -19,7 +19,7 @@
   color: var(--bs-secondary-01);
 }
 .journal .container .journal-inr .row {
-  margin-block: 80px 38px;
+  margin-block: 100px 38px;
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 {
   position: relative;
@@ -108,15 +108,28 @@
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-next,
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-prev {
-  width: auto;
+  width: fit-content;
+  height: fit-content;
+}
+.journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-next .primary-btn .text,
+.journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-prev .primary-btn .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-next::after,
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-prev::after {
   content: none;
 }
+.journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-next .primary-btn .text .icon {
+  margin-left: 8px;
+}
+.journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-button-prev .primary-btn .text .icon {
+  margin-right: 8px;
+}
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-pagination {
   position: relative;
-  bottom: 0;
+  bottom: -100%;
   font: 25px/133.2% "Jost-Medium";
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 .pagination-otr .swiper-pagination .swiper-pagination-total {

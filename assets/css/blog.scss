@@ -6,7 +6,7 @@
 
     .container {
         .journal-inr {
-            padding-block: 107px;
+            padding-block: 90px;
 
             .wrapper {
                 width: 700px;
@@ -23,7 +23,7 @@
             }
 
             .row {
-                margin-block: 80px 38px;
+                margin-block: 100px 38px;
 
                 >.blogs {
                     .mySwiper5 {
@@ -142,16 +142,45 @@
 
                             .swiper-button-next,
                             .swiper-button-prev {
-                                width: auto;
+                                width: fit-content;
+                                height: fit-content;
+
+                                .primary-btn {
+                                    .text {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
 
                                 &::after {
                                     content: none;
                                 }
                             }
 
+                            .swiper-button-next {
+                                .primary-btn {
+                                    .text {
+                                        .icon {
+                                            margin-left: 8px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .swiper-button-prev {
+                                .primary-btn {
+                                    .text {
+                                        .icon {
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                }
+                            }
+
                             .swiper-pagination {
                                 position: relative;
-                                bottom: 0;
+                                bottom: -100%;
                                 font: 25px / 133.2% "Jost-Medium";
 
                                 .swiper-pagination-total {
@@ -163,55 +192,7 @@
                                 }
                             }
                         }
-
-                        // .pagination {
-
-                        //     position: relative;
-                        //     padding: 30px;
-                        //     border: 1px solid red;
-                        //     width: 100%;
-                        //     display: flex;
-                        //     justify-content: flex-end;
-
-                        //     .swiper-button-next {
-                        //         position: relative !important;
-                        //         width: fit-content;
-                        //         height: fit-content;
-                        //         top: 0% !important;
-
-                        //         .primary-btn {
-                        //             .text {
-                        //                 display: flex;
-                        //                 justify-content: center;
-
-                        //                 .icon {
-                        //                     margin-left: 8px;
-                        //                 }
-                        //             }
-                        //         }
-
-                        //         &::after {
-                        //             content: none;
-                        //         }
-                        //     }
-
-                        //     .swiper-pagination {
-                        //         width: fit-content;
-                        //         height: fit-content;
-                        //         text-align: left;
-                        //         font: 25px / 133.2% "Jost-Medium";
-
-                        //         .swiper-pagination-total {
-                        //             color: var(--bs-tint13-grey);
-                        //         }
-
-                        //         .swiper-pagination-current {
-                        //             color: var(--bs-primary-03);
-                        //         }
-                        //     }
-                        // }
                     }
-
                 }
             }
 

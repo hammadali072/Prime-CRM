@@ -112,6 +112,9 @@ body {
 .heading-h4{
     font: 30px / 133.2% "Jost-Medium";
 }
+.heading-h4-JSB{
+    font: 30px / 133.2% "Jost-SemiBold";
+}
 .heading-L{
     font: 25px / 133.2% "Jost-Medium";
 }
