@@ -78,6 +78,11 @@
 .journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .tags .tag-otr .label {
   color: var(--bs-tint13-grey);
 }
+.journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .tags .tag-link:hover .icon-otr,
+.journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .tags .tag-link:hover .label {
+  transition: all 0.3s;
+  color: var(--bs-primary-01);
+}
 .journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .head-desc {
   margin-block: 32px;
 }

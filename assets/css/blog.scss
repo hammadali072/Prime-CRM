@@ -91,6 +91,18 @@
                                                             color: var(--bs-tint13-grey);
                                                         }
                                                     }
+
+                                                    .tag-link {
+                                                        &:hover {
+
+                                                            .icon-otr,
+                                                            .label {
+                                                                transition: all 0.3s;
+
+                                                                color: var(--bs-primary-01);
+                                                            }
+                                                        }
+                                                    }
                                                 }
 
                                                 .head-desc {

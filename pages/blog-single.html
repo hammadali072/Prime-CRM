@@ -68,12 +68,12 @@
                             </div>
                             <div class="main-content">
                                 <div class="tags">
-                                    <div class="tag-otr d-flex">
+                                    <a href="#" class="tag-otr tag-link d-flex">
                                         <div class="icon-otr">
                                             <i class="icon bi bi-person"></i>
                                         </div>
                                         <p class="label heading-M-SansSB">Admin</p>
-                                    </div>
+                                    </a>
                                     <div class="tag-otr d-flex">
                                         <div class="icon-otr">
                                             <i class="icon bi bi-chat-dots"></i>
@@ -110,6 +110,9 @@
                                         </ul>
                                     </div>
                                     <div class="quote-otr text-center">
+                                        <div class="symbol-otr">
+                                            <p class="quote-symbol">“</p>
+                                        </div>
                                         <q class="quote heading-M-SansSBI">For the longest time,
                                             computers have been
                                             associated with work. Mainframes were for the Army, government agencies, and
@@ -176,36 +179,44 @@
                                 </div>
                                 <form class="form-main">
                                     <h2 class="heading heading-h2 text-capitalize">Leave a Comment</h2>
-                                    <div class="input-main">
+                                    <div class="input-main d-flex flex-column">
                                         <div class="name-email-otr">
                                             <div class="input-otr name-otr">
-                                                <label for="fullName" class="name-label">Full Name *</label>
-                                                <input type="text" name="name" id="fullName" class="input-name"
-                                                    placeholder="john david">
+                                                <label for="fullName" class="input-label heading-M-SansSB">Full Name
+                                                    *</label>
+                                                <input type="text" name="name" id="fullName"
+                                                    class="input-text heading-M-Sans" placeholder="john david">
                                             </div>
-                                            <div class="input-otr name-otr">
-                                                <label for="email" class="email-label">Your Email *</label>
-                                                <input type="email" name="email" id="email" class="input-name"
+                                            <div class="input-otr email-otr">
+                                                <label for="email" class="input-label heading-M-SansSB">Your Email
+                                                    *</label>
+                                                <input type="email" name="email" id="email"
+                                                    class="input-email heading-M-Sans"
                                                     placeholder="example@yourmail.com">
                                             </div>
                                         </div>
-                                        <div class="input-otr">
-                                            <label for="website" class="input-label">Website *</label>
-                                            <input type="url" name="website" id="website" class="input-url"
+                                        <div class="input-otr website-otr">
+                                            <label for="website" class="input-label heading-M-SansSB">Website *</label>
+                                            <input type="url" name="website" id="website"
+                                                class="input-url heading-M-Sans"
                                                 placeholder="your website address here">
                                         </div>
-                                        <div class="input-otr">
-                                            <label for="message" class="input-label">Message *</label>
-                                            <textarea name="message" id="message" class="input-message"
+                                        <div class="input-otr message-otr">
+                                            <label for="message" class="input-label heading-M-SansSB">Message *</label>
+                                            <textarea name="message" id="message" class="input-message heading-M-Sans"
                                                 placeholder="Hello there,I would like to talk about how to..."></textarea>
                                         </div>
-                                        <div class="input-otr">
-                                            <input type="checkbox" name="save" id="save" class="input-check">
-                                            <label for="save" id="save" class="input-label">Save my name, email, and
-                                                website in this browser for the next time I comment.</label>
+                                        <div class="input-otr check-otr">
+                                            <input type="checkbox" name="save" id="save"
+                                                class="input-check form-check-input">
+                                            <label for="save" id="save"
+                                                class="input-label heading-M-Sans text-lowercase">Save my name, email,
+                                                and website in this browser for the next time I comment.</label>
                                         </div>
                                         <div class="action-btn">
-                                            <button class="submit-button">Post Comment</button>
+                                            <button class="submit-button primary-btn heading-M-SansSB">
+                                                <span class="text">Post Comment</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
