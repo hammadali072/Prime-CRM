@@ -95,6 +95,9 @@ body {
 .heading-h1{
     font: 60px/ 133.2% "Jost-SemiBold";
 }
+.heading-h1EB{
+    font: 60px/ 133.2% "Jost-ExtraBold";
+}
 .heading-h1JB{
     font: 60px/ 133.2% "Jost-Bold";
 }
@@ -133,6 +136,9 @@ body {
 }
 .heading-M{
     font: 20px / 160% "Jost-Regular";
+}
+.heading-M-Mulish{
+    font: 20px / 160% "Mulish-Regular";
 }
 .heading-M-Sans{
     font: 20px / 160% "OpenSans-Regular";

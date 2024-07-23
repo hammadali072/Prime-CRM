@@ -75,6 +75,33 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Jost-ExtraBold';
+    src: url('Jost-ExtraBold.eot');
+    src: url('Jost-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Jost-ExtraBold.woff2') format('woff2'),
+        url('Jost-ExtraBold.woff') format('woff'),
+        url('Jost-ExtraBold.ttf') format('truetype'),
+        url('Jost-ExtraBold.svg#Jost-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('Mulish-Regular.eot');
+    src: url('Mulish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-Regular.woff2') format('woff2'),
+        url('Mulish-Regular.woff') format('woff'),
+        url('Mulish-Regular.ttf') format('truetype'),
+        url('Mulish-Regular.svg#Mulish-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 @font-face {
     font-family: 'Jost-Medium';
