@@ -1,0 +1,115 @@
+.license {
+    position: relative;
+
+    .container {
+        .license-inr {
+            padding-block: 107px;
+
+            .wrapper {
+                width: 700px;
+                max-width: 100%;
+
+                .heading {
+                    color: var(--bs-black);
+                }
+
+                .desc {
+                    margin-top: 14px;
+                    color: var(--bs-secondary-01);
+                }
+            }
+
+            .content-otr {
+                margin-top: 126px;
+                gap: 126px 0;
+
+                .item-main {
+                    .item-inr {
+                        padding: 88px 86px;
+                        border-radius: 30px;
+                        background-color: var(--bs-secondary-04);
+                        outline-offset: 15px;
+                        outline: 3px dashed var(--bs-tint8-grey);
+
+                        .heading {
+                            color: #1b2534;
+                        }
+
+                        .desc {
+                            color: var(--bs-secondary-01);
+                            margin-top: 17px;
+
+                            .text-inr {
+                                color: var(--bs-tint-purple);
+                                font-family: "OpenSans-Bold";
+                            }
+                        }
+                    }
+                }
+
+                .Icon-otr {
+                    .Icon-inr {
+                        .link-otr {
+                            .link {
+                                margin-top: 38px;
+                                color: #231656;
+                            }
+                        }
+                    }
+                }
+
+                .photography-otr {
+                    .photography-inr {
+                        .desc {
+                            .text-inr {
+                                font-family: "OpenSans-Bold";
+                                color: #606060;
+                            }
+                        }
+
+                        .unsplash-license {
+                            padding-block: 38px;
+
+                            .links-otr {
+                                margin-top: 22px;
+                                color: var(--bs-tint-purple);
+
+                                .link {
+                                    color: var(--bs-tint-purple);
+                                }
+                            }
+
+                        }
+
+                        .pexel-license {
+
+                            .links-otr {
+                                margin-top: 22px;
+                                color: var(--bs-tint-purple);
+
+                                .link {
+                                    color: var(--bs-tint-purple);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        background: url(/assets/img/section-vector.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translateY(-20%);
+        z-index: -1;
+    }
+}

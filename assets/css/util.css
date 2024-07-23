@@ -78,6 +78,7 @@ html {
     --bs-tint1-skinRed: #ffe7df;
     --bs-tint2-skinRed: #fff1db;
     --bs-tint3-skinRed: #f4e5ff;
+    --bs-tint-purple: #8a6ffd;
 }
 
 /* **********************************
@@ -115,6 +116,9 @@ body {
 .heading-h4-JSB{
     font: 30px / 133.2% "Jost-SemiBold";
 }
+.heading-h4-JB{
+    font: 30px / 133.2% "Jost-Bold";
+}
 .heading-L{
     font: 25px / 133.2% "Jost-Medium";
 }
@@ -126,6 +130,9 @@ body {
 }
 .heading-M-Sans{
     font: 20px / 160% "OpenSans-Regular";
+}
+.heading-M-SB{
+    font: 20px / 160% "OpenSans-Bold";
 }
 .heading-M-Inter{
     font: 20px / 160% "Inter-Regular";

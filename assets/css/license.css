@@ -1,0 +1,78 @@
+.license {
+  position: relative;
+}
+.license .container .license-inr {
+  padding-block: 107px;
+}
+.license .container .license-inr .wrapper {
+  width: 700px;
+  max-width: 100%;
+}
+.license .container .license-inr .wrapper .heading {
+  color: var(--bs-black);
+}
+.license .container .license-inr .wrapper .desc {
+  margin-top: 14px;
+  color: var(--bs-secondary-01);
+}
+.license .container .license-inr .content-otr {
+  margin-top: 126px;
+  gap: 126px 0;
+}
+.license .container .license-inr .content-otr .item-main .item-inr {
+  padding: 88px 86px;
+  border-radius: 30px;
+  background-color: var(--bs-secondary-04);
+  outline-offset: 15px;
+  outline: 3px dashed var(--bs-tint8-grey);
+}
+.license .container .license-inr .content-otr .item-main .item-inr .heading {
+  color: #1b2534;
+}
+.license .container .license-inr .content-otr .item-main .item-inr .desc {
+  color: var(--bs-secondary-01);
+  margin-top: 17px;
+}
+.license .container .license-inr .content-otr .item-main .item-inr .desc .text-inr {
+  color: var(--bs-tint-purple);
+  font-family: "OpenSans-Bold";
+}
+.license .container .license-inr .content-otr .Icon-otr .Icon-inr .link-otr .link {
+  margin-top: 38px;
+  color: #231656;
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .desc .text-inr {
+  font-family: "OpenSans-Bold";
+  color: #606060;
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .unsplash-license {
+  padding-block: 38px;
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .unsplash-license .links-otr {
+  margin-top: 22px;
+  color: var(--bs-tint-purple);
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .unsplash-license .links-otr .link {
+  color: var(--bs-tint-purple);
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .pexel-license .links-otr {
+  margin-top: 22px;
+  color: var(--bs-tint-purple);
+}
+.license .container .license-inr .content-otr .photography-otr .photography-inr .pexel-license .links-otr .link {
+  color: var(--bs-tint-purple);
+}
+.license::after {
+  content: "";
+  background: url(/assets/img/section-vector.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translateY(-20%);
+  z-index: -1;
+}
