@@ -32,6 +32,18 @@ body {
    ********************************** */
 
 .header-hero {
+    .hero {
+        display: none;
+    }
+
+}
+
+section:not(:first-child),
+footer {
+    display: none;
+}
+
+.header-hero {
     position: relative;
 
     .hero {
