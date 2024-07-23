@@ -1,0 +1,31 @@
+.error404 .error404-inr {
+  background-color: #171717;
+  border-radius: 30px;
+  margin-block: 118px 150px;
+  padding: 111px 289px;
+}
+.error404 .error404-inr .heading {
+  font-size: 300px;
+  line-height: 110%;
+  color: var(--bs-white);
+}
+.error404 .error404-inr .heading2 {
+  font-size: 75px;
+  color: var(--bs-white);
+  margin-block: 20px;
+}
+.error404 .error404-inr .desc {
+  font-size: 25px;
+  color: var(--bs-white);
+}
+.error404 .error404-inr .action-otr {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.error404 .error404-inr .action-otr .action-btn {
+  color: var(--bs-primary-03);
+}
+.error404 .error404-inr .action-otr .action-btn::after {
+  background-color: var(--bs-tint2-blue);
+}

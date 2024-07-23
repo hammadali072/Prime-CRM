@@ -101,6 +101,9 @@ body {
 .heading-h2{
     font: 40px/ 133.2% "Jost-SemiBold";
 }
+.heading-h2JB{
+    font: 40px/ 133.2% "Jost-Bold";
+}
 .heading-h2-JM{
     font: 40px/ 133.2% "Jost-Medium";
 }
