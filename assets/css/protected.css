@@ -1,0 +1,64 @@
+.protected .container .protected-inr .wrapper {
+  padding-top: 100px;
+  width: 700px;
+  max-width: 100%;
+}
+.protected .container .protected-inr .wrapper .heading {
+  color: var(--bs-primary-03);
+}
+.protected .container .protected-inr .wrapper .desc {
+  margin-top: 14px;
+  color: var(--bs-secondary-01);
+}
+.protected .container .protected-inr .content-otr {
+  padding-block: 247px 202px;
+  position: relative;
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
+  position: relative;
+  width: 62%;
+  margin-inline: auto;
+  border-radius: 30px;
+  padding: 92px 112px;
+  box-shadow: 40px 48px 105px rgba(235, 235, 235, 0.5647058824);
+  border: 1px solid transparent;
+  background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(0deg, var(--bs-tint7-grey), var(--bs-white)) border-box;
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .heading {
+  color: var(--bs-primary-03);
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .desc {
+  margin-block: 25px 15px;
+  font-size: 22px;
+  color: var(--bs-secondary-01);
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
+  padding: 31px;
+  background-color: var(--bs-white);
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  width: 100%;
+  color: var(--bs-secondary-01);
+  margin-bottom: 40px;
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password:focus {
+  outline: none;
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .action-otr {
+  display: flex;
+  justify-content: center;
+}
+.protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .action-otr .action-btn {
+  background-color: transparent;
+}
+.protected .container .protected-inr .content-otr::after {
+  content: "";
+  width: 100%;
+  height: 533px;
+  background-image: linear-gradient(to right, #7de9fe, #82fbed);
+  position: absolute;
+  top: 129px;
+  left: 0;
+  border-radius: 30px;
+  z-index: -2;
+}
