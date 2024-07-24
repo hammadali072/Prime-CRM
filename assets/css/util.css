@@ -1,3 +1,4 @@
+@import url(./custom.css);
 /* **********************************
    *********Basic Style Start********
    ********************************** */
@@ -27,10 +28,14 @@ a {
   display: inline-block;
 }
 .container{
-    width: 1400px;
-    max-width: 100%;
     padding-block: 15px;
 }
+@media (min-width: 575.98px) and (max-width: 1200px) {
+    .container{
+        padding-inline: 45px;
+    }
+}
+
 
 /* **********************************
    ********Color Palette Start*******
@@ -111,6 +116,17 @@ body {
 .heading-h2-JM{
     font: 40px/ 133.2% "Jost-Medium";
 }
+@media  (max-width: 1200px) {
+    .heading-h2{
+        font: 32px/ 120.2% "Jost-SemiBold";
+    }
+    .heading-h2JB{
+        font: 32px/ 120.2% "Jost-Bold";
+    }
+    .heading-h2-JM{
+        font: 32px/ 120.2% "Jost-Medium";
+    }   
+}
 .heading-h3{
     font: 35px / 133.2% "Jost-Medium";
 }
@@ -162,11 +178,48 @@ body {
 .heading-M-JSB{
     font: 20px / 160% "Jost-SemiBold";
 }
+@media (max-width: 575.98px) {
+    .heading-M {
+        font: 18px / 150% "Jost-Regular";
+    }
+    .heading-M-Mulish {
+        font: 18px / 150% "Mulish-Regular";
+    }
+    .heading-M-Sans {
+        font: 18px / 150% "OpenSans-Regular";
+    }
+    .heading-M-SB {
+        font: 18px / 150% "OpenSans-Bold";
+    }
+    .heading-M-Inter {
+        font: 18px / 150% "Inter-Regular";
+    }
+    .heading-M-SansSB {
+        font: 18px / 150.5% "OpenSans-SemiBold";
+    }
+    .heading-M-SansSBI {
+        font: 18px / 150.5% "OpenSans-SemiBoldItalic";
+    }
+    .heading-M-JM {
+        font: 18px / 150% "Jost-Medium";
+    }
+    .heading-M-JSB {
+        font: 18px / 150% "Jost-SemiBold";
+    }
+}
 .heading-S{
     font: 18px / 160% "OpenSans-Regular";
 }
 .heading-SB{
     font: 18px / 160% "OpenSans-SemiBold";
+}
+@media (max-width: 575.98px) {
+    .heading-S{
+        font: 16px / 160% "OpenSans-Regular";
+    }
+    .heading-SB{
+        font: 16px / 160% "OpenSans-SemiBold";
+    }   
 }
 .primary-btn{
     display: flex;

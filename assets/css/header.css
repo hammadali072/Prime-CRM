@@ -2,18 +2,33 @@
    *******Header Section Start*******
    ********************************** */
 .header-main {
-  padding-top: 41px;
+  padding-top: 35px;
 }
 .header-main .container .header-inr .logo-main .logo-otr .logo-img {
   width: 260px;
   height: 55px;
   object-fit: contain;
 }
+@media (max-width: 1400px) {
+  .header-main .container .header-inr .logo-main .logo-otr .logo-img {
+    width: 220px;
+  }
+}
 .header-main .container .header-inr .menu-action {
   gap: 0 45px;
 }
+@media (max-width: 1400px) {
+  .header-main .container .header-inr .menu-action {
+    gap: 0 35px;
+  }
+}
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul {
   gap: 0 45px;
+}
+@media (max-width: 1400px) {
+  .header-main .container .header-inr .menu-action .menu-otr .menu-ul {
+    gap: 0 35px;
+  }
 }
 .header-main .container .header-inr .menu-action .menu-otr .menu-ul .menu-li .menu-a {
   position: relative;

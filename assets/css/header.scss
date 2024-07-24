@@ -3,7 +3,7 @@
    ********************************** */
 
 .header-main {
-    padding-top: 41px;
+    padding-top: 35px;
 
     .container {
         .header-inr {
@@ -13,6 +13,10 @@
                         width: 260px;
                         height: 55px;
                         object-fit: contain;
+
+                        @media (max-width:1400px) {
+                            width: 220px;
+                        }
                     }
                 }
             }
@@ -20,9 +24,17 @@
             .menu-action {
                 gap: 0 45px;
 
+                @media (max-width:1400px) {
+                    gap: 0 35px;
+                }
+
                 .menu-otr {
                     .menu-ul {
                         gap: 0 45px;
+
+                        @media (max-width:1400px) {
+                            gap: 0 35px;
+                        }
 
                         .menu-li {
                             .menu-a {
