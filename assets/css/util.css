@@ -151,6 +151,14 @@ body {
 .heading-L-Sans{
     font: 25px / 160% "OpenSans-Regular";
 }
+@media (max-width: 575.98px) {
+    .heading-L {
+        font: 22px / 133.2% "Jost-Medium";
+    }
+    .heading-L-Sans {
+        font: 22px / 160% "OpenSans-Regular";
+    }   
+}
 .heading-M{
     font: 20px / 160% "Jost-Regular";
 }

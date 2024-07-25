@@ -218,7 +218,7 @@
         <div class="container">
             <div class="project-management-inr">
                 <div class="row align-items-center">
-                    <div class="col-6 col-content-otr">
+                    <div class="col-lg-6 col-md-12 col-content-otr">
                         <div class="col-content-inr">
                             <div class="content-otr">
                                 <h2 class="heading heading-h2 text-capitalize">Ways a project management tool can help
@@ -229,7 +229,7 @@
                             </div>
                             <div class="cards-otr">
                                 <ul class="row card-ul">
-                                    <li class="col-6 card-li">
+                                    <li class="col-md-6 col-sm-12 card-li">
                                         <div class="icon-otr">
                                             <img src="./assets/img/security-icon.svg" alt="Icon" class="icon">
                                         </div>
@@ -239,7 +239,7 @@
                                                 while chatting</p>
                                         </div>
                                     </li>
-                                    <li class="col-6 card-li">
+                                    <li class="col-md-6 col-sm-12 card-li">
                                         <div class="icon-otr">
                                             <img src="./assets/img/announcement-icon.svg" alt="Icon" class="icon">
                                         </div>
@@ -252,13 +252,13 @@
                                 </ul>
                             </div>
                             <div class="action-otr">
-                                <a href="#" class="primary-btn get-start-btn d-inline-flex">
+                                <a href="#" class="primary-btn get-start-btn">
                                     <span class="text">Get Started</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-img-otr">
+                    <div class="col-lg-6 col-md-12 col-img-otr">
                         <div class="col-img-inr">
                             <img src="./assets/img/project-management.png" alt="Image" class="img">
                         </div>
@@ -491,12 +491,12 @@
         <div class="container">
             <div class="newsletter-inr">
                 <div class="row">
-                    <div class="col-5 col-content-otr">
+                    <div class="col-xl-5 col-content-otr">
                         <h2 class="heading heading-h2">Sell | Serve | Automate</h2>
                         <p class="desc heading-M-Sans">Boost enrolment and manage student lifecycle with our 360° CRM
                         </p>
                     </div>
-                    <div class="col-6 col-contact-otr">
+                    <div class="col-xl-7 col-contact-otr">
                         <h6 class="heading heading-M">*Your Business Email Address</h6>
                         <form class="form-main">
                             <div class="input-otr">
@@ -1392,16 +1392,28 @@
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper1 = new Swiper(".mySwiper1", {
-            slidesPerView: 4,
             spaceBetween: 1,
             autoplay: true,
             autoplay: {
                 delay: 3000,
             },
             loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                420: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
         });
         var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 5,
             spaceBetween: 1,
             autoplay: {
                 value: true,
@@ -1409,15 +1421,42 @@
                 reverseDirection: true,
             },
             loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
+                420: {
+                    slidesPerView: 3,
+                },
+                576: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            },
         });
         var swiper = new Swiper(".mySwiper3", {
-            slidesPerView: 4,
             spaceBetween: 1,
             autoplay: true,
             autoplay: {
                 delay: 3000,
             },
             loop: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                420: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
         });
         var swiper = new Swiper(".mySwiper4", {
             pagination: {
