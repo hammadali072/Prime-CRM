@@ -145,6 +145,17 @@ body {
 .heading-h4-JB{
     font: 30px / 133.2% "Jost-Bold";
 }
+@media (max-width: 575.98px) {
+    .heading-h4{
+        font: 25px / 133.2% "Jost-Medium";
+    }
+    .heading-h4-JSB{
+        font: 25px / 133.2% "Jost-SemiBold";
+    }
+    .heading-h4-JB{
+        font: 25px / 133.2% "Jost-Bold";
+    }   
+}
 .heading-L{
     font: 25px / 133.2% "Jost-Medium";
 }
@@ -159,6 +170,15 @@ body {
         font: 22px / 160% "OpenSans-Regular";
     }   
 }
+@media (max-width: 420px) {
+    .heading-L {
+        font: 20px / 120% "Jost-Medium";
+    }
+    .heading-L-Sans {
+        font: 20px / 140% "OpenSans-Regular";
+    }   
+}
+
 .heading-M{
     font: 20px / 160% "Jost-Regular";
 }
