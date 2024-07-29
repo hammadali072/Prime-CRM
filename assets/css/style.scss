@@ -31,19 +31,6 @@ body {
    ***********Hero Section***********
    ********************************** */
 
-// .header-hero {
-//     .hero {
-//         display: none;
-//     }
-
-// }
-
-.header-hero,
-section:not(:nth-child(9)),
-footer {
-    display: none;
-}
-
 .header-hero {
     position: relative;
 
@@ -60,9 +47,25 @@ footer {
                         .col-content-inr {
                             padding-top: 120px;
 
+                            @media (max-width: 767.98px) {
+                                padding-top: 90px;
+                            }
+
+                            @media (max-width: 420px) {
+                                padding-top: 50px;
+                            }
+
                             >.content-otr {
                                 padding-bottom: 76px;
                                 border-bottom: 1px solid var(--bs-secondary-02);
+
+                                @media (max-width: 575.98px) {
+                                    padding-bottom: 50px;
+                                }
+
+                                @media (max-width: 991.98px) {
+                                    text-align: center;
+                                }
 
                                 .heading {
                                     color: var(--bs-primary-03);
@@ -71,13 +74,24 @@ footer {
                                 .desc {
                                     margin-block: 21px 34px;
                                     color: var(--bs-secondary-01);
+
+                                    @media (max-width: 575.98px) {
+                                        margin-block: 20px;
+                                    }
                                 }
 
                                 .action-main {
-
                                     display: flex;
                                     gap: 0 36px;
                                     align-items: center;
+
+                                    @media (max-width: 991.98px) {
+                                        justify-content: center;
+                                    }
+
+                                    @media (max-width: 420px) {
+                                        flex-direction: column;
+                                    }
 
                                     .action-otr {
                                         display: flex;
@@ -115,12 +129,24 @@ footer {
                             }
 
                             .five-star-otr {
+                                display: flex;
+                                justify-content: center;
 
                                 .five-star-inr {
                                     position: relative;
                                     justify-content: space-between;
                                     width: 95%;
                                     padding: 56px;
+
+                                    @media (max-width: 991.98px) {
+                                        width: 521px;
+                                    }
+
+                                    @media (max-width: 575.98px) {
+                                        width: fit-content;
+                                        padding: 35px;
+                                    }
+
 
                                     .badge-otr {
 
@@ -129,6 +155,12 @@ footer {
                                             width: 109px;
                                             height: 140px;
                                             object-fit: contain;
+
+                                            @media (max-width: 575.98px) {
+                                                width: 90px;
+                                                height: 120px;
+                                                margin-right: 16px;
+                                            }
                                         }
                                     }
 
@@ -136,8 +168,25 @@ footer {
                                         padding-left: 28px;
                                         position: relative;
 
+                                        @media (max-width: 575.98px) {
+                                            padding-left: 16px;
+                                        }
+
+                                        .heading {
+                                            color: var(--bs-primary-03);
+
+                                            @media (max-width: 420px) {
+                                                font-size: 25px;
+                                            }
+                                        }
+
                                         .desc {
                                             margin-block: 5px;
+                                            color: var(--bs-secondary-01);
+
+                                            @media (max-width: 420px) {
+                                                font-size: 16px;
+                                            }
                                         }
 
                                         .rating-otr {
@@ -191,6 +240,14 @@ footer {
                                         top: 50%;
                                         right: 0;
                                     }
+
+                                    @media (max-width: 575.98px) {
+
+                                        &::before,
+                                        &::after {
+                                            width: 35px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -204,6 +261,10 @@ footer {
 
                         @media (max-width: 1400px) {
                             height: 750px;
+                        }
+
+                        @media (max-width: 1200px) {
+                            position: relative;
                         }
 
                         .hero-img {
@@ -245,6 +306,7 @@ footer {
                 .plus-icon-2 {
                     top: 40%;
                     left: 45%;
+                    border: 1px solid red;
                 }
 
                 .circle-icon {
@@ -300,6 +362,16 @@ footer {
 
         @media (max-width: 1400px) {
             height: 650px;
+        }
+
+        @media (max-width: 991.98px) {
+            height: 500px;
+        }
+
+        @media (max-width: 575.98px) {
+            height: 300px;
+            top: -2%;
+            transform: translateY(2%);
         }
     }
 }
@@ -1847,7 +1919,11 @@ footer {
    ********************************** */
 
 .pricing {
-    padding: 100px 152px;
+    padding-block: 152px 100px;
+
+    @media (max-width: 575.98px) {
+        padding-block: 100px;
+    }
 
     .container {
         .pricing-inr {
@@ -1860,15 +1936,30 @@ footer {
                 }
 
                 .desc {
-                    margin-bottom: 14px;
+                    margin-top: 14px;
                     color: var(--bs-secondary-01);
                 }
             }
 
             .content-otr {
                 position: relative;
-                padding: 118px 95px 0px;
-                gap: 0 40px;
+                padding: 154px 95px 0px;
+
+                @media (max-width: 1400px) {
+                    padding: 154px 55px 0;
+                }
+
+                @media (max-width:991.98px) {
+                    gap: 40px 0;
+                }
+
+                @media (max-width: 575.98px) {
+                    padding: 100px 35px 0;
+                }
+
+                @media (max-width: 420px) {
+                    padding: 80px 15px 0;
+                }
 
                 &::after {
                     content: "";
@@ -1877,17 +1968,42 @@ footer {
                     position: absolute;
                     border-radius: 30px;
                     background-image: conic-gradient(var(--bs-primary-02), var(--bs-primary-01));
-                    top: 0;
+                    top: 36px;
                     left: 0;
                     z-index: -1;
                 }
 
+                @media (max-width: 991.98px) {
+                    &::after {
+                        height: 100%;
+                        background-image: linear-gradient(150deg, var(--bs-primary-02), var(--bs-primary-01));
+                    }
+                }
+
                 .price-deal {
+
+                    @media (min-width: 991.98px) {
+                        &:first-child {
+                            padding-right: 32px;
+                        }
+
+                        &:last-child {
+                            padding-left: 32px;
+                        }
+                    }
 
                     .icon-heading {
                         padding: 0 0 10px 59px;
                         align-items: center;
                         gap: 0 8px;
+
+                        @media (max-width:991.98px) {
+                            padding: 0 0 24px 59px;
+                        }
+
+                        @media (max-width: 575.98px) {
+                            padding: 0 0 24px 12px;
+                        }
 
                         .icon-otr {
                             padding: 16px;
@@ -1897,6 +2013,16 @@ footer {
                             .icon {
                                 width: 25px;
                                 height: 25px;
+
+                            }
+
+                            @media (max-width: 575.98px) {
+                                padding: 12px;
+
+                                .icon {
+                                    width: 20px;
+                                    height: 20px;
+                                }
                             }
                         }
 
@@ -1908,19 +2034,32 @@ footer {
                     .card-otr {
                         .card-inr {
                             border-radius: 30px;
-                            background-color: var(--bs-white);
-                            box-shadow: 0px 28px 57px #bebebe25;
+                            border: 1px solid transparent;
+                            background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box,
+                                linear-gradient(0deg, var(--bs-tint12-grey), var(--bs-white)) border-box;
+                            box-shadow: 0px 28px 57px #bebebe40;
                             padding: 62px;
+
+                            @media (max-width: 767.98px) {
+                                padding: 52px;
+                            }
+
+                            @media (max-width: 575.98px) {
+                                padding: 30px;
+                            }
 
                             .heading {
                                 color: var(--bs-primary-03);
                             }
 
                             >.desc {
-                                text-align: justify;
                                 color: var(--bs-primary-03);
                                 padding-block: 23px 34px;
                                 border-bottom: 1px solid var(--bs-tint6-grey);
+
+                                @media (max-width: 767.98px) {
+                                    padding-block: 13px 23px;
+                                }
 
                                 .text-inr {
                                     font-family: "OpenSans-Bold";
@@ -1933,15 +2072,28 @@ footer {
                                 flex-direction: column;
                                 gap: 10px 0;
 
+                                @media (max-width: 575.98px) {
+                                    gap: 5px 0;
+                                }
+
+                                @media (max-width: 420px) {
+                                    gap: 0 0;
+                                }
+
                                 .feature-li {
                                     gap: 0 17px;
                                     align-items: center;
                                     color: var(--bs-secondary-01);
 
+                                    @media (max-width: 575.98px) {
+                                        gap: 0 10px;
+                                    }
+
                                     .icon-otr {
                                         .bi-check2 {
                                             color: var(--bs-tint-green);
                                             font-size: 24px;
+                                            -webkit-text-stroke: 0.5px;
                                         }
 
                                         .not-avail {
@@ -1955,6 +2107,7 @@ footer {
                                 .feat-11 {
                                     .text-inr {
                                         font-family: "OpenSans-Bold";
+                                        color: var(--bs-primary-03);
                                     }
                                 }
 
@@ -1974,6 +2127,10 @@ footer {
                                     padding: 26px;
                                     border-radius: 15px;
 
+                                    @media (max-width: 575.98px) {
+                                        padding: 20px;
+                                    }
+
                                     &:hover {
                                         background-color: var(--bs-tint11-grey);
                                         border: 1px solid transparent;
@@ -1984,7 +2141,7 @@ footer {
                     }
                 }
 
-                .price-deal1 {
+                .price-deal-1 {
                     .icon-heading {
                         .icon-otr {
                             background-color: var(--bs-primary-03);
@@ -1996,7 +2153,7 @@ footer {
                     }
                 }
 
-                .price-deal2 {
+                .price-deal-2 {
                     .icon-heading {
                         .icon-otr {
                             background-color: var(--bs-white);
@@ -2015,9 +2172,15 @@ footer {
                                     width: 67px;
                                     height: 67px;
 
+                                    @media (max-width: 767.98px) {
+                                        width: 48px;
+                                        height: 48px;
+                                    }
+
                                     .icon {
                                         width: 100%;
                                         height: 100%;
+                                        object-fit: contain;
                                     }
                                 }
                             }

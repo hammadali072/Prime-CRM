@@ -107,6 +107,28 @@ body {
 .heading-h1JB{
     font: 60px/ 133.2% "Jost-Bold";
 }
+@media (max-width: 1400px) {
+    .heading-h1{
+        font: 50px/ 120% "Jost-SemiBold";
+    }
+    .heading-h1EB{
+        font: 50px/ 120% "Jost-ExtraBold";
+    }
+    .heading-h1JB{
+        font: 50px/ 120% "Jost-Bold";
+    }   
+}
+@media (max-width: 575.98px) {
+    .heading-h1{
+        font: 45px/ 120% "Jost-SemiBold";
+    }
+    .heading-h1EB{
+        font: 45px/ 120% "Jost-ExtraBold";
+    }
+    .heading-h1JB{
+        font: 45px/ 120% "Jost-Bold";
+    }   
+}
 .heading-h2{
     font: 40px/ 133.2% "Jost-SemiBold";
 }
@@ -135,6 +157,17 @@ body {
 }
 .heading-h3-SB{
     font: 35px / 133.2% "OpenSans-Bold";
+}
+@media (max-width: 575.98px) {
+    .heading-h3{
+        font: 30px / 133.2% "Jost-Medium";
+    }
+    .heading-h3JR{
+        font: 30px / 133.2% "Jost-Regular";
+    }
+    .heading-h3-SB{
+        font: 30px / 133.2% "OpenSans-Bold";
+    }   
 }
 .heading-h4{
     font: 30px / 133.2% "Jost-Medium";
@@ -208,31 +241,31 @@ body {
 }
 @media (max-width: 575.98px) {
     .heading-M {
-        font: 18px / 150% "Jost-Regular";
+        font: 18px / 133% "Jost-Regular";
     }
     .heading-M-Mulish {
-        font: 18px / 150% "Mulish-Regular";
+        font: 18px / 133% "Mulish-Regular";
     }
     .heading-M-Sans {
-        font: 18px / 150% "OpenSans-Regular";
+        font: 18px / 133% "OpenSans-Regular";
     }
     .heading-M-SB {
-        font: 18px / 150% "OpenSans-Bold";
+        font: 18px / 133% "OpenSans-Bold";
     }
     .heading-M-Inter {
-        font: 18px / 150% "Inter-Regular";
+        font: 18px / 133% "Inter-Regular";
     }
     .heading-M-SansSB {
-        font: 18px / 150.5% "OpenSans-SemiBold";
+        font: 18px / 133.5% "OpenSans-SemiBold";
     }
     .heading-M-SansSBI {
-        font: 18px / 150.5% "OpenSans-SemiBoldItalic";
+        font: 18px / 133.5% "OpenSans-SemiBoldItalic";
     }
     .heading-M-JM {
-        font: 18px / 150% "Jost-Medium";
+        font: 18px / 133% "Jost-Medium";
     }
     .heading-M-JSB {
-        font: 18px / 150% "Jost-SemiBold";
+        font: 18px / 133% "Jost-SemiBold";
     }
 }
 .heading-S{
@@ -243,10 +276,10 @@ body {
 }
 @media (max-width: 575.98px) {
     .heading-S{
-        font: 16px / 160% "OpenSans-Regular";
+        font: 16px / 130% "OpenSans-Regular";
     }
     .heading-SB{
-        font: 16px / 160% "OpenSans-SemiBold";
+        font: 16px / 130% "OpenSans-SemiBold";
     }   
 }
 .primary-btn{

@@ -1,9 +1,93 @@
 /* **********************************
+   *******Overlay Section Start******
+   ********************************** */
+
+.overlay-main {
+    .offcanvas {
+        .offcanvas-body {
+            padding-top: 35px;
+
+            .logo-main {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo-otr {
+                    .logo-img {
+                        width: 170px;
+                        height: 45px;
+                        object-fit: contain;
+                    }
+                }
+
+                .close-icon-otr {
+                    background-color: var(--bs-secondary-03);
+                    border-radius: 100%;
+                    width: 52px;
+                    height: 52px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    .icon {
+                        font-size: 25px;
+                        -webkit-text-stroke: 2px;
+                        color: var(--bs-secondary-01);
+                        transition: all 0.3ss;
+                    }
+
+                    &:hover {
+                        background-color: var(--bs-secondary-01);
+
+                        .icon {
+                            color: var(--bs-secondary-03);
+                        }
+                    }
+                }
+            }
+
+            .menu-action {
+                margin-top: 25px;
+                gap: 25px 0;
+
+                .menu-otr {
+                    .menu-ul {
+                        gap: 10px 0;
+
+                        .menu-li {
+                            .menu-a {
+                                position: relative;
+                                color: var(--bs-primary-03);
+                                transition: all 0.3s;
+
+                                &:hover {
+                                    color: var(--bs-tint1-blue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* **********************************
+   *******Overlay Section End********
+   ********************************** */
+
+/* **********************************
    *******Header Section Start*******
    ********************************** */
 
 .header-main {
     padding-top: 35px;
+
+    @media (max-width: 991.98px) {
+        padding-top: 20px;
+    }
 
     .container {
         .header-inr {
@@ -15,26 +99,44 @@
                         object-fit: contain;
 
                         @media (max-width:1400px) {
-                            width: 220px;
+                            width: 200px;
+                        }
+
+                        @media (max-width: 991.98px) {
+                            width: 190px;
                         }
                     }
                 }
             }
 
             .menu-action {
+                display: flex;
                 gap: 0 45px;
+                justify-content: center;
 
                 @media (max-width:1400px) {
                     gap: 0 35px;
                 }
 
+                @media (max-width: 1200px) {
+                    gap: 0 20px;
+                }
+
+                @media (max-width: 991.98px) {
+                    display: none;
+                }
+
                 .menu-otr {
                     .menu-ul {
+                        display: flex;
                         gap: 0 45px;
+                        align-items: center;
 
                         @media (max-width:1400px) {
                             gap: 0 35px;
                         }
+
+
 
                         .menu-li {
                             .menu-a {
@@ -64,6 +166,37 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            .menu-icon-otr {
+                background-color: var(--bs-secondary-03);
+                border-radius: 100%;
+                width: 52px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                @media (min-width: 991.98px) {
+                    display: none;
+                }
+
+                .icon {
+                    font-size: 25px;
+                    -webkit-text-stroke: 2px;
+                    color: var(--bs-secondary-01);
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+                    background-color: var(--bs-secondary-01);
+
+                    .icon {
+                        color: var(--bs-secondary-03);
                     }
                 }
             }
