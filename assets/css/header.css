@@ -14,8 +14,23 @@
   height: 45px;
   object-fit: contain;
 }
+@media (max-width: 1400px) {
+  .overlay-main .offcanvas .offcanvas-body .logo-main .logo-otr .logo-img {
+    width: 200px;
+  }
+}
+@media (max-width: 991.98px) {
+  .overlay-main .offcanvas .offcanvas-body .logo-main .logo-otr .logo-img {
+    width: 190px;
+  }
+}
+@media (max-width: 420px) {
+  .overlay-main .offcanvas .offcanvas-body .logo-main .logo-otr .logo-img {
+    width: 150px;
+  }
+}
 .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr {
-  background-color: var(--bs-secondary-03);
+  background-color: var(--bs-secondary-01);
   border-radius: 100%;
   width: 52px;
   height: 52px;
@@ -25,17 +40,28 @@
   transition: all 0.3s;
   cursor: pointer;
 }
+@media (max-width: 420px) {
+  .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr {
+    width: 40px;
+    height: 40px;
+  }
+}
 .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr .icon {
   font-size: 25px;
   -webkit-text-stroke: 2px;
-  color: var(--bs-secondary-01);
+  color: var(--bs-secondary-03);
   transition: all 0.3ss;
 }
+@media (max-width: 420px) {
+  .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr .icon {
+    font-size: 20px;
+  }
+}
 .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr:hover {
-  background-color: var(--bs-secondary-01);
+  background-color: var(--bs-secondary-03);
 }
 .overlay-main .offcanvas .offcanvas-body .logo-main .close-icon-otr:hover .icon {
-  color: var(--bs-secondary-03);
+  color: var(--bs-secondary-01);
 }
 .overlay-main .offcanvas .offcanvas-body .menu-action {
   margin-top: 25px;
@@ -80,6 +106,11 @@
 @media (max-width: 991.98px) {
   .header-main .container .header-inr .logo-main .logo-otr .logo-img {
     width: 190px;
+  }
+}
+@media (max-width: 420px) {
+  .header-main .container .header-inr .logo-main .logo-otr .logo-img {
+    width: 150px;
   }
 }
 .header-main .container .header-inr .menu-action {
@@ -148,6 +179,12 @@
 @media (min-width: 991.98px) {
   .header-main .container .header-inr .menu-icon-otr {
     display: none;
+  }
+}
+@media (max-width: 420px) {
+  .header-main .container .header-inr .menu-icon-otr {
+    width: 48px;
+    height: 48px;
   }
 }
 .header-main .container .header-inr .menu-icon-otr .icon {
