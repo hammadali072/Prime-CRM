@@ -19,6 +19,53 @@
 </head>
 
 <body>
+    <!-- =================================================
+                        Overlay Section Start
+        ================================================== -->
+    <div class="overlay-main">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+            aria-hidden="true">
+            <div class="offcanvas-body">
+                <div class="logo-main">
+                    <a href="#" class="logo-otr">
+                        <img src="../assets/img/logo-dark.png" alt="Logo" class="logo-img">
+                    </a>
+                    <div class="close-icon-otr" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="icon bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="menu-action d-flex flex-column">
+                    <nav class="menu-otr">
+                        <ul class="menu-ul d-flex flex-column">
+                            <li class="menu-li">
+                                <a href="#" class="heading-M-JM menu-a">Solution</a>
+                            </li>
+                            <li class="nav-item menu-li">
+                                <a href="#" class="heading-M-JM menu-a">Industries</a>
+                            </li>
+                            <li class="nav-item menu-li">
+                                <a href="#" class="heading-M-JM menu-a">Products</a>
+                            </li>
+                            <li class="nav-item menu-li">
+                                <a href="#" class="heading-M-JM menu-a">Resources</a>
+                            </li>
+                            <li class="nav-item menu-li">
+                                <a href="#" class="heading-M-JM menu-a">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="action-otr">
+                        <a href="#" class="login-btn primary-btn justify-content-center">
+                            <span class="text">Login</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================================================
+                        Overlay Section End
+        ================================================== -->
     <header class="header-main">
         <div class="container">
             <div class="header-inr d-flex justify-content-between align-items-center">
@@ -27,9 +74,9 @@
                         <img src="../assets/img/logo-dark.png" alt="Logo" class="logo-img">
                     </a>
                 </div>
-                <div class="menu-action d-flex align-items-center">
+                <div class="menu-action align-items-center">
                     <nav class="menu-otr">
-                        <ul class="menu-ul d-flex align-items-center">
+                        <ul class="menu-ul align-items-center">
                             <li class="menu-li">
                                 <a href="#" class="heading-M-JM menu-a">Solution</a>
                             </li>
@@ -52,6 +99,10 @@
                             <span class="text">Login</span>
                         </a>
                     </div>
+                </div>
+                <div class="menu-icon-otr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <i class="icon bi bi-list"></i>
                 </div>
             </div>
         </div>
@@ -81,7 +132,7 @@
                 <div class="logo-icon-otr">
                     <div class="logo-main">
                         <a href="#" class="logo-otr">
-                            <img src="../assets/img/logo-light.png" alt="Logo" class="logo">
+                            <img src="./assets/img/logo-light.png" alt="Logo" class="logo">
                         </a>
                     </div>
                     <div class="social-otr">
@@ -115,8 +166,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-7 col-links-otr">
-                        <div class="col col-link-otr">
+                    <div class="col-lg-7 col-links-otr row">
+                        <div class="col-md-4 col-sm-6 col-link-otr">
                             <div class="col-link-inr">
                                 <h5 class="heading heading-L">Usefull Link</h5>
                                 <ul class="link-ul">
@@ -138,7 +189,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col col-link-otr">
+                        <div class="col-md-4 col-sm-6 col-link-otr">
                             <div class="col-link-inr">
                                 <h5 class="heading heading-L">Service</h5>
                                 <ul class="link-ul">
@@ -160,7 +211,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col col-link-otr">
+                        <div class="col-md-4 col-sm-12 col-link-otr">
                             <div class="col-link-inr">
                                 <h5 class="heading heading-L">Contact Us</h5>
                                 <ul class="link-ul">
@@ -177,12 +228,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5 col-news-otr">
+                    <div class="col-lg-5 col-news-otr">
                         <div class="col-news-inr">
                             <div class="heading-otr">
                                 <h5 class="heading heading-L">Our Latest News</h5>
                                 <div class="icon-otr">
-                                    <a href="#" class="icon-a d-flex">
+                                    <a href="./blog.html" class="icon-a d-flex">
                                         <i class="icon bi bi-chevron-up"></i>
                                     </a>
                                 </div>
@@ -190,7 +241,7 @@
                             <div class="content-otr">
                                 <div class="content-inr">
                                     <div class="img-otr">
-                                        <img src="../assets/img/news-img.png" alt="News" class="news-img">
+                                        <img src="./assets/img/news-img.png" alt="News" class="news-img">
                                     </div>
                                     <div class="overlay">
                                         <a href="#" class="action-btn heading-M-JSB">Read More</a>
