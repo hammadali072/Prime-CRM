@@ -23,6 +23,11 @@
                 margin-top: 126px;
                 gap: 126px 0;
 
+                @media (max-width: 991.98px) {
+                    margin-top: 90px;
+                    gap: 90px 0;
+                }
+
                 .item-main {
                     .item-inr {
                         padding: 88px 86px;
@@ -31,6 +36,20 @@
                         outline-offset: 15px;
                         outline: 3px dashed var(--bs-tint8-grey);
 
+                        @media (max-width: 1200px) {
+                            padding: 60px 66px;
+                            outline-offset: 10px;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            padding: 35px;
+                            outline-offset: 5px;
+                        }
+
+                        @media (max-width: 420px) {
+                            padding: 25px;
+                        }
+
                         .heading {
                             color: #1b2534;
                         }
@@ -38,6 +57,10 @@
                         .desc {
                             color: var(--bs-secondary-01);
                             margin-top: 17px;
+
+                            @media (max-width: 575.98px) {
+                                margin-top: 10px;
+                            }
 
                             .text-inr {
                                 color: var(--bs-tint-purple);
@@ -70,8 +93,17 @@
                         .unsplash-license {
                             padding-block: 38px;
 
+                            @media (max-width: 767.98px) {
+                                padding-block: 28px;
+                            }
+
                             .links-otr {
                                 margin-top: 22px;
+
+                                @media (max-width: 767.98px) {
+                                    margin-top: 16px;
+                                }
+
                                 color: var(--bs-tint-purple);
 
                                 .link {
@@ -85,6 +117,11 @@
 
                             .links-otr {
                                 margin-top: 22px;
+
+                                @media (max-width: 767.98px) {
+                                    margin-top: 16px;
+                                }
+
                                 color: var(--bs-tint-purple);
 
                                 .link {
@@ -111,5 +148,23 @@
         right: 0;
         transform: translateY(-20%);
         z-index: -1;
+    }
+
+    @media (max-width: 1400px) {
+        &::after {
+            height: 850px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &::after {
+            height: 700px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        &::after {
+            content: none;
+        }
     }
 }

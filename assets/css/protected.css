@@ -3,6 +3,16 @@
   width: 700px;
   max-width: 100%;
 }
+@media (max-width: 767.98px) {
+  .protected .container .protected-inr .wrapper {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 420px) {
+  .protected .container .protected-inr .wrapper {
+    padding-top: 60px;
+  }
+}
 .protected .container .protected-inr .wrapper .heading {
   color: var(--bs-primary-03);
 }
@@ -11,8 +21,25 @@
   color: var(--bs-secondary-01);
 }
 .protected .container .protected-inr .content-otr {
-  padding-block: 247px 202px;
+  margin-top: 110px;
+  padding-block: 118px 180px;
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .protected .container .protected-inr .content-otr {
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 767.98px) {
+  .protected .container .protected-inr .content-otr {
+    margin-top: 90px;
+    padding-block: 90px;
+  }
+}
+@media (max-width: 575.98px) {
+  .protected .container .protected-inr .content-otr {
+    margin-block: 70px;
+  }
 }
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
   position: relative;
@@ -24,13 +51,51 @@
   border: 1px solid transparent;
   background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box, linear-gradient(0deg, var(--bs-tint7-grey), var(--bs-white)) border-box;
 }
+@media (max-width: 1400px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
+    width: 72%;
+  }
+}
+@media (max-width: 991.98px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
+    width: 85%;
+    padding: 72px 90px;
+  }
+}
+@media (max-width: 767.98px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
+    width: calc(100% - 80px);
+    padding: 42px 50px;
+  }
+}
+@media (max-width: 420px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
+    width: calc(100% - 40px);
+    padding: 35px;
+  }
+}
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .heading {
   color: var(--bs-primary-03);
+}
+@media (max-width: 420px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .heading {
+    font-size: 40px;
+  }
 }
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .desc {
   margin-block: 25px 15px;
   font-size: 22px;
   color: var(--bs-secondary-01);
+}
+@media (max-width: 767.98px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .desc {
+    font-size: 16px;
+  }
 }
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
   padding: 31px;
@@ -40,6 +105,17 @@
   width: 100%;
   color: var(--bs-secondary-01);
   margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
+    padding: 18px;
+  }
 }
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password:focus {
   outline: none;
@@ -51,14 +127,24 @@
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .action-otr .action-btn {
   background-color: transparent;
 }
+@media (max-width: 575.98px) {
+  .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .action-otr .action-btn {
+    padding: 12px 22px;
+  }
+}
 .protected .container .protected-inr .content-otr::after {
   content: "";
   width: 100%;
   height: 533px;
   background-image: linear-gradient(to right, #7de9fe, #82fbed);
   position: absolute;
-  top: 129px;
+  top: 0;
   left: 0;
   border-radius: 30px;
   z-index: -2;
+}
+@media (max-width: 767.98px) {
+  .protected .container .protected-inr .content-otr::after {
+    height: 100%;
+  }
 }

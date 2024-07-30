@@ -2,21 +2,74 @@
   background-color: #171717;
   border-radius: 30px;
   margin-block: 118px 150px;
-  padding: 111px 289px;
+  padding: 111px;
+}
+@media (max-width: 991.98px) {
+  .error404 .error404-inr {
+    padding: 90px;
+    padding-block: 110px;
+  }
+}
+@media (max-width: 575.98px) {
+  .error404 .error404-inr {
+    padding: 50px;
+    margin-block: 90px;
+  }
 }
 .error404 .error404-inr .heading {
   font-size: 300px;
   line-height: 110%;
   color: var(--bs-white);
 }
+@media (max-width: 1200px) {
+  .error404 .error404-inr .heading {
+    font-size: 200px;
+  }
+}
+@media (max-width: 991.98px) {
+  .error404 .error404-inr .heading {
+    font-size: 150px;
+  }
+}
+@media (max-width: 420px) {
+  .error404 .error404-inr .heading {
+    font-size: 100px;
+  }
+}
 .error404 .error404-inr .heading2 {
   font-size: 75px;
   color: var(--bs-white);
   margin-block: 20px;
 }
+@media (max-width: 1200px) {
+  .error404 .error404-inr .heading2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  .error404 .error404-inr .heading2 {
+    font-size: 40px;
+    margin-block: 14px;
+  }
+}
+@media (max-width: 420px) {
+  .error404 .error404-inr .heading2 {
+    font-size: 30px;
+  }
+}
 .error404 .error404-inr .desc {
   font-size: 25px;
   color: var(--bs-white);
+}
+@media (max-width: 991.98px) {
+  .error404 .error404-inr .desc {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .error404 .error404-inr .desc {
+    font-size: 18px;
+  }
 }
 .error404 .error404-inr .action-otr {
   margin-top: 20px;
@@ -25,6 +78,7 @@
 }
 .error404 .error404-inr .action-otr .action-btn {
   color: var(--bs-primary-03);
+  padding: 12px 24px;
 }
 .error404 .error404-inr .action-otr .action-btn::after {
   background-color: var(--bs-tint2-blue);

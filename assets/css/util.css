@@ -268,6 +268,35 @@ body {
         font: 18px / 133% "Jost-SemiBold";
     }
 }
+@media (max-width: 320px) {
+    .heading-M {
+        font: 16px / 133% "Jost-Regular";
+    }
+    .heading-M-Mulish {
+        font: 16px / 133% "Mulish-Regular";
+    }
+    .heading-M-Sans {
+        font: 16px / 133% "OpenSans-Regular";
+    }
+    .heading-M-SB {
+        font: 16px / 133% "OpenSans-Bold";
+    }
+    .heading-M-Inter {
+        font: 16px / 133% "Inter-Regular";
+    }
+    .heading-M-SansSB {
+        font: 16px / 133.5% "OpenSans-SemiBold";
+    }
+    .heading-M-SansSBI {
+        font: 16px / 133.5% "OpenSans-SemiBoldItalic";
+    }
+    .heading-M-JM {
+        font: 16px / 133% "Jost-Medium";
+    }
+    .heading-M-JSB {
+        font: 16px / 133% "Jost-SemiBold";
+    }
+}
 .heading-S{
     font: 18px / 160% "OpenSans-Regular";
 }
@@ -293,6 +322,11 @@ body {
     overflow: hidden;
     border: 1px solid transparent;
     transition: all 0.3s;
+}
+@media (max-width: 575.98px) {
+    .primary-btn{
+        font: 18px / 160% "Jost-SemiBold";
+    }
 }
 .primary-btn::after{
     content: "";
