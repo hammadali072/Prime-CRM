@@ -1,16 +1,6 @@
 /* **********************************
-   ***********Mixins Start************
+   ***********Mixins Start***********
    ********************************** */
-
-@mixin basicStyle($hc, $dc) {
-    .heading {
-        color: $hc;
-    }
-
-    .desc {
-        color: $dc;
-    }
-}
 
 @mixin imageStyle($br) {
     border-radius: $br;
@@ -20,7 +10,7 @@
 }
 
 /* **********************************
-   ************Mixin End*************
+   ***********Mixins End*************
    ********************************** */
 
 body {
@@ -140,6 +130,7 @@ body {
 
                                     @media (max-width: 991.98px) {
                                         width: 521px;
+                                        padding: 45px 56px;
                                     }
 
                                     @media (max-width: 575.98px) {
@@ -263,6 +254,10 @@ body {
                             height: 750px;
                         }
 
+                        @media (max-width: 767.98px) {
+                            height: 500px;
+                        }
+
                         @media (max-width: 1200px) {
                             position: relative;
                         }
@@ -288,6 +283,10 @@ body {
         }
 
         .icons-otr {
+            @media (max-width: 420px) {
+                display: none;
+            }
+
             .icon-otr {
                 .icon {
                     position: absolute;
@@ -298,31 +297,8 @@ body {
                     color: var(--bs-tint9-grey);
                 }
 
-                .plus-icon-1 {
-                    top: 69px;
-                    left: 164px;
-                }
-
-                .plus-icon-2 {
-                    top: 40%;
-                    left: 45%;
-                    border: 1px solid red;
-                }
-
                 .circle-icon {
                     font-size: 38px;
-                }
-
-                .circle-icon-1 {
-                    color: #ffffff65;
-                    top: 34px;
-                    right: 150px;
-                }
-
-                .circle-icon-2 {
-                    color: #f5deba;
-                    bottom: 35%;
-                    left: 164px;
                 }
 
                 .play-icon {
@@ -330,18 +306,86 @@ body {
                     color: #dfdaff;
                 }
 
+                .plus-icon-1 {
+                    top: 69px;
+                    left: 164px;
+
+                    @media (max-width: 767.98px) {
+                        top: 5%;
+                        left: 1%;
+                    }
+                }
+
+                .plus-icon-2 {
+                    top: 40%;
+                    left: 45%;
+                    transform: translate(-40%, -45%);
+
+                    @media (max-width: 991.98px) {
+                        top: 31%;
+                        transform: translate(-31%, -45%);
+                    }
+
+                    @media (max-width: 767.98px) {
+                        top: 32%;
+                        transform: translate(-32%, -45%);
+                    }
+                }
+
+                .circle-icon-1 {
+                    color: #ffffffA5;
+                    top: 34px;
+                    right: 150px;
+
+                    @media (max-width: 767.98px) {
+                        top: 4%;
+                        right: 1%;
+                        transform: translate(-4%, -1%);
+                    }
+                }
+
+                .circle-icon-2 {
+                    color: #f5deba;
+                    bottom: 35%;
+                    left: 164px;
+
+                    @media (max-width: 991.98px) {
+                        bottom: 68%;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        bottom: 66%;
+                        left: 20px;
+                    }
+                }
+
                 .play-icon-no {
                     top: 32px;
                     left: 40%;
-                    transform: rotateZ(20deg);
+                    transform: translateX(-40%) rotateZ(20deg);
+
+                    @media (max-width: 767.98px) {
+                        top: 5%;
+                        left: 50%;
+                        transform: translate(-5%, -50%);
+                    }
+
                 }
 
                 .play-icon-fill {
                     font-size: 36px;
                     color: #cfe8ea;
-                    transform: rotateZ(-30deg);
-                    bottom: 30%;
+                    bottom: 35%;
                     left: 45%;
+
+                    @media (max-width: 991.98px) {
+                        bottom: 68%;
+                        left: 76%;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        bottom: 67%;
+                    }
                 }
             }
         }
@@ -693,8 +737,13 @@ body {
                                         linear-gradient(90deg, #e0e0e000, var(--bs-tint10-grey)) border-box;
                                     border-radius: 30px;
 
+                                    .heading {
+                                        color: var(--bs-primary-03);
+                                    }
 
-                                    @include basicStyle(var(--bs-primary-03), var(--bs-secondary-01));
+                                    .desc {
+                                        color: var(--bs-secondary-01);
+                                    }
 
                                     @media (max-width: 420px) {
                                         padding: 23px 23px 23px 50px;
