@@ -2,6 +2,7 @@
    *******Overlay Section Start******
    ********************************** */
 
+
 .overlay-main {
     .offcanvas {
         .offcanvas-body {
@@ -78,14 +79,90 @@
                         gap: 10px 0;
 
                         .menu-li {
+                            position: relative;
+
                             .menu-a {
                                 position: relative;
                                 color: var(--bs-primary-03);
                                 transition: all 0.3s;
+                                display: flex;
+                                gap: 0 10px;
+                                align-items: center;
+
+                                .icon-otr {
+                                    padding: 1px;
+                                    border: 1px solid var(--bs-primary-03);
+                                    border-radius: 100%;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    .icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .menu-active {
+                                    color: var(--bs-tint1-blue);
+                                }
+
+                                .icon-active {
+                                    border: 1px solid var(--bs-tint1-blue);
+                                    color: var(--bs-tint1-blue);
+                                }
 
                                 &:hover {
                                     color: var(--bs-tint1-blue);
+
+                                    .icon-otr {
+                                        border: 1px solid var(--bs-tint1-blue);
+                                    }
                                 }
+                            }
+
+                            .menu-dropdown-otr {
+                                position: absolute;
+                                padding-top: 10px;
+                                left: 0;
+                                z-index: 2;
+                                width: 100%;
+                                visibility: hidden;
+                                opacity: 0;
+
+                                .menu-dropdown-inr {
+                                    background-color: var(--bs-secondary-03);
+                                    padding: 16px;
+                                    border-radius: 6px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    width: 100%;
+
+                                    .menu-dropdown-ul {
+                                        .menu-dropdown-li {
+                                            .menu-dropdown-a {
+                                                color: var(--bs-primary-03);
+                                                transition: all 0.3s;
+                                                position: relative;
+
+                                                &:hover {
+                                                    color: var(--bs-tint1-blue);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .show-dropdown {
+                                visibility: visible;
+                                opacity: 1;
+                                position: relative;
                             }
                         }
                     }
@@ -161,13 +238,16 @@
                             gap: 0 35px;
                         }
 
-
-
                         .menu-li {
+                            position: relative;
+
                             .menu-a {
                                 position: relative;
                                 color: var(--bs-primary-03);
                                 transition: all 0.3s;
+                                display: flex;
+                                gap: 0 8px;
+                                align-items: center;
 
                                 &::after {
                                     content: "";
@@ -187,6 +267,85 @@
                                         width: 100%;
                                         visibility: visible;
                                         opacity: 1;
+                                    }
+                                }
+
+                                .icon-otr {
+                                    padding: 1px;
+                                    border: 1px solid var(--bs-primary-03);
+                                    border-radius: 100%;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    .icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            &:last-child:hover .menu-dropdown-otr {
+                                visibility: visible;
+                                opacity: 1;
+                                transform: translateY(0);
+                            }
+
+                            .menu-dropdown-otr {
+                                position: absolute;
+                                padding-top: 25px;
+                                top: 35px;
+                                left: 0;
+                                z-index: 2;
+                                width: 100%;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all 0.3s;
+                                transform: translateY(-10px);
+
+                                .menu-dropdown-inr {
+                                    background-color: var(--bs-white);
+                                    box-shadow: 0 28px 57px #bebebe80;
+                                    padding: 18px;
+                                    border-radius: 12px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                    width: 250px;
+
+                                    .menu-dropdown-ul {
+                                        .menu-dropdown-li {
+                                            .menu-dropdown-a {
+                                                color: var(--bs-primary-03);
+                                                transition: all 0.3s;
+                                                position: relative;
+
+                                                &::after {
+                                                    content: "";
+                                                    width: 50%;
+                                                    height: 2px;
+                                                    background-color: var(--bs-primary-03);
+                                                    position: absolute;
+                                                    bottom: 2px;
+                                                    left: 0;
+                                                    transition: all 0.3s;
+                                                    visibility: hidden;
+                                                    opacity: 0;
+                                                }
+
+                                                &:hover {
+                                                    &::after {
+                                                        width: 100%;
+                                                        visibility: visible;
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }

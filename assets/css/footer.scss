@@ -132,7 +132,7 @@
                         }
                     }
 
-                    .col-link-otr:not(:last-child) {
+                    .col-link-otr {
                         .col-link-inr {
                             .link-ul {
                                 .link-li {
@@ -164,7 +164,12 @@
                                     background: linear-gradient(var(--bs-primary-03), var(--bs-primary-03)) padding-box,
                                         linear-gradient(-90deg, var(--bs-tint1-grey), var(--bs-primary-03)) border-box;
                                     border-radius: 20px;
+
+                                    &:last-child {
+                                        word-break: break-all;
+                                    }
                                 }
+
                             }
                         }
                     }

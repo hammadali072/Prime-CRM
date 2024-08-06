@@ -123,7 +123,7 @@
   -webkit-box-orient: vertical;
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .head-desc .heading:hover {
-  color: var(--bs-black);
+  color: var(--bs-tint1-blue);
 }
 .journal .container .journal-inr .row > .blogs .mySwiper5 .swiper-wrapper .swiper-slide .blogs .blog-otr .blog-inr .content-otr .head-desc .desc {
   margin-top: 15px;
