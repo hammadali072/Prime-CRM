@@ -1481,7 +1481,7 @@ body {
                                     padding-bottom: 21px;
 
                                     @media (max-width: 575.98px) {
-                                        gap: 18px;
+                                        gap: 12px;
                                     }
 
                                     @media (max-width: 420px) {
@@ -1492,10 +1492,22 @@ body {
                                     .icon-otr {
                                         padding: 14px;
                                         border-radius: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        @media (max-width: 420px) {
+                                            padding: 10px;
+                                        }
 
                                         .icon {
                                             width: 26px;
                                             height: 26px;
+
+                                            @media (max-width: 420px) {
+                                                width: 22px;
+                                                height: 22px;
+                                            }
                                         }
                                     }
 
