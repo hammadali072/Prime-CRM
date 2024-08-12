@@ -4,6 +4,11 @@
 .overlay-main .offcanvas .offcanvas-body {
   padding-top: 35px;
 }
+@media (max-width: 991.98px) {
+  .overlay-main .offcanvas .offcanvas-body {
+    padding-top: 20px;
+  }
+}
 .overlay-main .offcanvas .offcanvas-body .logo-main {
   display: flex;
   justify-content: space-between;
