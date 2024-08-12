@@ -156,6 +156,11 @@
     padding-top: 20px;
   }
 }
+@media (max-width: 420px) {
+  .header-main {
+    padding-top: 0px;
+  }
+}
 .header-main .container .header-inr .logo-main .logo-otr .logo-img {
   width: 260px;
   height: 55px;
@@ -317,8 +322,8 @@
 }
 @media (max-width: 420px) {
   .header-main .container .header-inr .menu-icon-otr {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
 }
 .header-main .container .header-inr .menu-icon-otr .icon {

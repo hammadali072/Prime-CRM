@@ -10,6 +10,10 @@
                     padding-top: 60px;
                 }
 
+                @media (max-width: 420px) {
+                    padding-top: 30px;
+                }
+
                 .heading {
                     color: var(--bs-primary-03);
                 }
@@ -31,7 +35,8 @@
                 }
 
                 @media (max-width: 575.98px) {
-                    margin-block: 60px;
+                    margin-block: 40px;
+                    padding: 80px 30px;
                 }
 
                 .version-otr {

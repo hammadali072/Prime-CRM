@@ -7,11 +7,11 @@
                 max-width: 100%;
 
                 @media (max-width: 767.98px) {
-                    padding-top: 80px;
+                    padding-top: 60px;
                 }
 
                 @media (max-width: 420px) {
-                    padding-top: 60px;
+                    padding-top: 30px;
                 }
 
                 .heading {
@@ -39,7 +39,8 @@
                 }
 
                 @media (max-width: 575.98px) {
-                    margin-block: 70px;
+                    margin-block: 50px;
+                    padding-block: 50px;
                 }
 
                 .page-password-otr {
@@ -53,7 +54,6 @@
                         border: 1px solid transparent;
                         background: linear-gradient(var(--bs-white), var(--bs-white)) padding-box,
                             linear-gradient(0deg, var(--bs-tint7-grey), var(--bs-white)) border-box;
-
 
                         @media (max-width: 1400px) {
                             width: 72%;
@@ -110,9 +110,10 @@
                                     @media (max-width: 991.98px) {
                                         padding: 25px;
                                         margin-bottom: 20px;
+                                        border-radius: 8px;
                                     }
 
-                                    @media (max-width: 420px) {
+                                    @media (max-width: 575.98px) {
                                         padding: 18px;
                                     }
 

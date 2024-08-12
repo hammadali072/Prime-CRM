@@ -5,12 +5,12 @@
 }
 @media (max-width: 767.98px) {
   .protected .container .protected-inr .wrapper {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 420px) {
   .protected .container .protected-inr .wrapper {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 .protected .container .protected-inr .wrapper .heading {
@@ -38,7 +38,8 @@
 }
 @media (max-width: 575.98px) {
   .protected .container .protected-inr .content-otr {
-    margin-block: 70px;
+    margin-block: 50px;
+    padding-block: 50px;
   }
 }
 .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr {
@@ -110,9 +111,10 @@
   .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
     padding: 25px;
     margin-bottom: 20px;
+    border-radius: 8px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 575.98px) {
   .protected .container .protected-inr .content-otr .page-password-otr .page-password-inr .form-otr .input-main .input-password {
     padding: 18px;
   }

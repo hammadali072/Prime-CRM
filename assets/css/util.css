@@ -121,15 +121,26 @@ body {
         font: 50px/ 120% "Jost-Bold";
     }   
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .heading-h1{
-        font: 45px/ 120% "Jost-SemiBold";
+        font: 40px/ 120% "Jost-SemiBold";
     }
     .heading-h1EB{
-        font: 45px/ 120% "Jost-ExtraBold";
+        font: 40px/ 120% "Jost-ExtraBold";
     }
     .heading-h1JB{
-        font: 45px/ 120% "Jost-Bold";
+        font: 40px/ 120% "Jost-Bold";
+    }   
+}
+@media (max-width: 420px) {
+    .heading-h1{
+        font: 36px/ 120% "Jost-SemiBold";
+    }
+    .heading-h1EB{
+        font: 36px/ 120% "Jost-ExtraBold";
+    }
+    .heading-h1JB{
+        font: 36px/ 120% "Jost-Bold";
     }   
 }
 .heading-h2{
@@ -200,18 +211,18 @@ body {
 }
 @media (max-width: 575.98px) {
     .heading-L {
-        font: 22px / 133.2% "Jost-Medium";
+        font: 20px / 133.2% "Jost-Medium";
     }
     .heading-L-Sans {
-        font: 22px / 160% "OpenSans-Regular";
+        font: 20px / 160% "OpenSans-Regular";
     }   
 }
 @media (max-width: 420px) {
     .heading-L {
-        font: 20px / 120% "Jost-Medium";
+        font: 18px / 120% "Jost-Medium";
     }
     .heading-L-Sans {
-        font: 20px / 140% "OpenSans-Regular";
+        font: 18px / 140% "OpenSans-Regular";
     }   
 }
 
@@ -271,7 +282,7 @@ body {
         font: 18px / 133% "Jost-SemiBold";
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
     .heading-M {
         font: 16px / 133% "Jost-Regular";
     }
@@ -308,10 +319,10 @@ body {
 }
 @media (max-width: 575.98px) {
     .heading-S{
-        font: 16px / 130% "OpenSans-Regular";
+        font: 16px / 160% "OpenSans-Regular";
     }
     .heading-SB{
-        font: 16px / 130% "OpenSans-SemiBold";
+        font: 16px / 160% "OpenSans-SemiBold";
     }   
 }
 .primary-btn{
@@ -329,6 +340,11 @@ body {
 @media (max-width: 575.98px) {
     .primary-btn{
         font: 18px / 160% "Jost-SemiBold";
+    }
+}
+@media (max-width: 420px) {
+    .primary-btn{
+        font: 16px / 160% "Jost-SemiBold";
     }
 }
 .primary-btn::after{

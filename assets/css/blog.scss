@@ -8,6 +8,10 @@
         .journal-inr {
             padding-block: 90px;
 
+            @media (max-width: 767.98px) {
+                padding-block: 50px;
+            }
+
             .wrapper {
                 width: 700px;
                 max-width: 100%;
@@ -24,9 +28,14 @@
 
             .row {
                 margin-block: 100px 38px;
+                gap: 40px 0;
 
                 @media (max-width: 991.98px) {
                     margin-block: 80px 38px;
+                }
+
+                @media (max-width: 767.98px) {
+                    margin-block: 40px;
                 }
 
                 >.blogs {
@@ -53,38 +62,51 @@
                                             box-shadow: 0 28px 12px #bebebe25;
                                             overflow: hidden;
 
-                                            .img-otr {
-                                                overflow: hidden;
-                                                position: relative;
+                                            .img-main {
 
-                                                .img {
-                                                    width: 100%;
-                                                    height: 100%;
-                                                    height: 450px;
-                                                    object-fit: cover;
-                                                    object-position: center;
-                                                    transition: all 0.3s ease;
+                                                .img-otr {
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    display: block;
+
+                                                    .img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        height: 450px;
+                                                        object-fit: cover;
+                                                        object-position: center;
+                                                        transition: all 0.3s ease;
+
+                                                        @media (max-width: 575.98px) {
+                                                            height: 350px;
+                                                        }
+
+                                                        @media (max-width: 420px) {
+                                                            height: 200px;
+                                                        }
+                                                    }
+
+                                                    &::after {
+                                                        content: "";
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        background-color: rgba($color: #000000, $alpha: 0.25);
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        visibility: hidden;
+                                                        opacity: 0;
+                                                        transition: all 0.3s;
+                                                    }
                                                 }
 
-                                                &::after {
-                                                    content: "";
-                                                    width: 100%;
-                                                    height: 100%;
-                                                    background-color: rgba($color: #000000, $alpha: 0.25);
-                                                    position: absolute;
-                                                    top: 0;
-                                                    left: 0;
-                                                    visibility: hidden;
-                                                    opacity: 0;
-                                                    transition: all 0.3s;
-                                                }
                                             }
 
                                             .content-otr {
                                                 padding: 38px 32px;
 
                                                 @media (max-width: 575.98px) {
-                                                    padding: 28px;
+                                                    padding: 22px 18px;
                                                 }
 
                                                 .tags {
@@ -105,6 +127,10 @@
                                                         .icon-otr {
                                                             font-size: 25px;
                                                             color: var(--bs-primary-03);
+
+                                                            @media (max-width: 575.98px) {
+                                                                font-size: 18px;
+                                                            }
                                                         }
 
                                                         .label {
@@ -129,7 +155,7 @@
                                                     margin-block: 32px;
 
                                                     @media (max-width: 575.98px) {
-                                                        margin-block: 25px;
+                                                        margin-block: 20px;
                                                     }
 
                                                     .heading {
@@ -164,21 +190,23 @@
                                                         padding: 14px 42px;
 
                                                         @media (max-width: 575.98px) {
-                                                            padding: 12px 32px;
+                                                            padding: 12px 24px;
                                                         }
                                                     }
                                                 }
                                             }
 
                                             &:hover {
-                                                .img-otr {
-                                                    .img {
-                                                        transform: scale(1.1);
-                                                    }
+                                                .img-main {
+                                                    .img-otr {
+                                                        .img {
+                                                            transform: scale(1.1);
+                                                        }
 
-                                                    &:after {
-                                                        visibility: visible;
-                                                        opacity: 1;
+                                                        &:after {
+                                                            visibility: visible;
+                                                            opacity: 1;
+                                                        }
                                                     }
                                                 }
                                             }
@@ -293,61 +321,6 @@
                     flex-direction: column;
                     gap: 50px 0;
 
-                    .form-otr {
-                        padding: 30px 33px;
-                        background-color: var(--bs-white);
-                        border-radius: 30px;
-                        box-shadow: 0 28px 57px #bebebe25;
-
-                        @media (max-width: 575.98px) {
-                            padding: 22px 28px;
-                        }
-
-                        @media (max-width: 420px) {
-                            padding: 18px 20px;
-                            border-radius: 20px;
-                        }
-
-                        .input-otr {
-                            background-color: var(--bs-tint11-grey);
-                            border-radius: 18px;
-                            position: relative;
-
-                            @media (max-width: 420px) {
-                                border-radius: 14px;
-                            }
-
-                            .input-search {
-                                background: transparent;
-                                padding: 20px 29px;
-                                border: none;
-                                width: calc(100% - 22px);
-
-                                @media (max-width: 575.98px) {
-                                    padding: 16px 24px;
-                                }
-
-                                &:focus {
-                                    outline: none;
-                                }
-                            }
-
-                            .icon {
-                                position: absolute;
-                                top: 50%;
-                                right: 18px;
-                                color: var(--bs-primary-03);
-                                font-size: 22px;
-                                -webkit-text-stroke: 2px;
-                                transform: translateY(-50%);
-
-                                @media (max-width: 575.98px) {
-                                    font-size: 20px;
-                                }
-                            }
-                        }
-                    }
-
                     .recent-post-otr {
                         .recent-post-inr {
                             padding: 46px 34px;
@@ -358,8 +331,12 @@
                                 linear-gradient(0deg, var(--bs-tint12-grey), var(--bs-white)) border-box;
                             box-shadow: 40px 48px 105px #9b9b9b20;
 
-                            @media (max-width: 420px) {
-                                padding: 33px 28px;
+                            @media (max-width: 991.98px) {
+                                box-shadow: 0px 0px 50px #9b9b9b20;
+                            }
+
+                            @media (max-width: 575.98px) {
+                                padding: 30px 24px;
                             }
 
                             .heading {
@@ -379,13 +356,9 @@
                                     gap: 0 19px;
 
                                     .post-li {
-                                        gap: 0 20px;
+                                        gap: 20px;
                                         padding-bottom: 30px;
                                         position: relative;
-
-                                        @media (max-width:420px) {
-                                            flex-direction: column;
-                                        }
 
                                         .img-otr {
                                             @media (max-width: 420px) {
@@ -399,7 +372,7 @@
                                                 object-fit: cover;
                                                 object-position: center;
 
-                                                @media (max-width: 420px) {
+                                                @media (max-width: 575.98px) {
                                                     width: 100%;
                                                 }
                                             }
@@ -409,6 +382,11 @@
                                             .heading {
                                                 color: var(--bs-primary-03);
                                                 line-height: 123.5%;
+                                                transition: all 0.3s;
+
+                                                &:hover {
+                                                    color: var(--bs-tint1-blue);
+                                                }
                                             }
 
                                             .text {
@@ -472,8 +450,12 @@
                                 linear-gradient(0deg, var(--bs-tint12-grey), var(--bs-white)) border-box;
                             box-shadow: 40px 48px 105px #9b9b9b20;
 
-                            @media (max-width: 420px) {
-                                padding: 30px 24px;
+                            @media (max-width: 991.98px) {
+                                box-shadow: 0px 0px 50px #9b9b9b20;
+                            }
+
+                            @media (max-width: 575.98px) {
+                                padding: 30 24px;
                             }
 
                             .heading {
@@ -546,9 +528,9 @@
         }
     }
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
         &::after {
-            content: none;
+            height: 600px;
         }
     }
 }

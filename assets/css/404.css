@@ -7,13 +7,13 @@
 @media (max-width: 991.98px) {
   .error404 .error404-inr {
     padding: 90px;
-    padding-block: 110px;
+    padding-block: 100px;
   }
 }
 @media (max-width: 575.98px) {
   .error404 .error404-inr {
-    padding: 50px;
-    margin-block: 90px;
+    padding: 40px 20px;
+    margin-block: 50px 65px;
   }
 }
 .error404 .error404-inr .heading {
@@ -49,7 +49,7 @@
 @media (max-width: 991.98px) {
   .error404 .error404-inr .heading2 {
     font-size: 40px;
-    margin-block: 14px;
+    margin-block: 12px;
   }
 }
 @media (max-width: 420px) {

@@ -8,6 +8,11 @@
     padding-top: 60px;
   }
 }
+@media (max-width: 420px) {
+  .changelog .container .changelog-inr .wrapper {
+    padding-top: 30px;
+  }
+}
 .changelog .container .changelog-inr .wrapper .heading {
   color: var(--bs-primary-03);
 }
@@ -28,7 +33,8 @@
 }
 @media (max-width: 575.98px) {
   .changelog .container .changelog-inr .content-otr {
-    margin-block: 60px;
+    margin-block: 40px;
+    padding: 80px 30px;
   }
 }
 .changelog .container .changelog-inr .content-otr .version-otr .version-inr {

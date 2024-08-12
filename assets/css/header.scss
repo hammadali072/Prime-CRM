@@ -55,7 +55,7 @@
                         color: var(--bs-secondary-03);
                         transition: all 0.3ss;
 
-                        @media (max-width:420px) {
+                        @media (max-width: 420px) {
                             font-size: 20px;
                         }
                     }
@@ -185,6 +185,10 @@
 
     @media (max-width: 991.98px) {
         padding-top: 20px;
+    }
+
+    @media (max-width: 420px) {
+        padding-top: 0px;
     }
 
     .container {
@@ -370,8 +374,8 @@
                 }
 
                 @media (max-width: 420px) {
-                    width: 48px;
-                    height: 48px;
+                    width: 40px;
+                    height: 40px;
                 }
 
                 .icon {
