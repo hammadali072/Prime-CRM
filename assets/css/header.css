@@ -4,9 +4,9 @@
 .overlay-main .offcanvas .offcanvas-body {
   padding-top: 35px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 420px) {
   .overlay-main .offcanvas .offcanvas-body {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }
 .overlay-main .offcanvas .offcanvas-body .logo-main {
